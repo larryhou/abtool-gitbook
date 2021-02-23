@@ -21,7 +21,7 @@ abtool源码基于C++14标准库实现，所以理论上处理好以上几个外
 2. CMake编译
 
 ```bash
-# 假设当前cd目录为工程根目录
+# 当前cd目录为工程根目录
 mkdir build
 cd build
 cmake ..
@@ -71,7 +71,7 @@ find . -iname '*.ab' | xargs abtool savetree -a types.tte
 `types.tte`是个二进制文件，我们需要把它转换成C++代码才能最终为abtool所用，通过下面这行命令可以轻松完成这个任务，整个过程就好比使用`protoc`编译`*.proto`文件一样。
 
 ```bash
-# 假设当前cd目录为工程根目录
+# 当前cd目录为工程根目录
 abtool gtt -a doc/resources/types.tte -o abtool/assetbundles/unity
 ```
 由于上面的脚本是在工程根目录执行，并且代码的输出目录为`abtool/assetbundles/unity`，所以当脚本执行完成后工程的代码就得到了更新。
