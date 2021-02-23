@@ -1,3 +1,5 @@
+# 简介
+
 由于笔者日常工作环境很少使用其他系统平台，暂时abtool只支持针对macOS系统的编译，感兴趣的朋友可以自行适配其他系统平台，涉及平台差异性的部分主要是一些外部链接库：
 
 - libreadline
@@ -8,8 +10,7 @@
 
 abtool源码基于C++14标准库实现，所以理论上处理好以上几个外部库的依赖问题即可成功编译。
 
-## 首次编译abtool
----
+#### 首次编译abtool
 
 如果您不是第一次使用abtool，也就是说您手上已经有了一份abtool工具，那么可以跳过该步骤，直接进行下一步操作。
 
@@ -28,8 +29,7 @@ cmake --build .
 
 脚本执行完，会在`build/bin`目录生成abtool命令行。
 
-## 生成TypeTree数据
----
+#### 生成TypeTree数据
 
 TypeTree记录了资源对象数据的序列化信息，收集TypeTree的目的是为了把Unity的类型信息集成到abtool工具里面，只有这样abtool才有可能实现它的功能。
 
@@ -65,8 +65,7 @@ find . -iname '*.ab' | xargs abtool savetree -a types.tte
 
 上述脚本通过`find`命令查找所有的ab文件，并把这些文件通过`xargs`透传给abtool工具去处理，最终会在当前目录生成`types.tte`文件（当然也可以通过`savetree`的`-a`参数指定其他保存目录），这就是我们需要的Unity类型数据。
 
-## 生成对象序列化代码
----
+#### 生成对象序列化代码
 
 由于`types.tte`是个二进制文件，我们需要把它转换成C++代码，通过下面这行命令可以轻松完成这个任务。
 
@@ -76,8 +75,7 @@ abtool gtt -a doc/resources/types.tte -o abtool/assetbundles/unity
 ```
 由于上面的脚本是在工程根目录执行，并且代码的输出目录为`abtool/assetbundles/unity`，所以当脚本执行完成后工程的代码就得到了更新。
 
-## 最终编译abtool
----
+#### 最终编译abtool
 
 通过上一步骤我们更新了Unity资源对象的序列化代码，所以还需要再次编译，这样我们就最终得到了功能完备的abtool，通过后续的章节可以进一步探索它的强大的威力。
 
