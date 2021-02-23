@@ -78,7 +78,7 @@ abtool gtt -a doc/resources/types.tte -o abtool/assetbundles/unity
 
 #### 最终编译abtool
 
-通过上一步骤我们修改了Unity资源对象的序列化代码，所以还需要再次编译，这样我们就最终得到了功能完备的abtool，通过后续的章节可以进一步探索它强大的威力。
+通过上一步骤我们修改了Unity资源对象的序列化代码，所以还需要再次编译，这样我们就最终得到了功能完备的abtool，通过后续的章节可以逐渐窥探它强大的威力。
 
 > 什么情况下需要重新编译abtool?
 
