@@ -1,0 +1,24 @@
+.book-summary {
+  counter-reset: summary-parent 0 summary-child 0 summary-grandchild 0;
+}
+.book-summary ul.summary>li>a {
+  counter-reset: summary-child summary-grandchild;
+  counter-increment: summary-parent;
+}
+.book-summary ul.summary>li>ul>li>a {
+  counter-reset: summary-grandchild;
+  counter-increment: summary-child;
+}
+.book-summary ul.summary>li>ul>li>ul>li>a {
+  counter-increment: summary-grandchild;
+}
+.book-summary ul.summary>li>a::before {
+  content: counter(summary-parent)".";
+}
+.book-summary ul.summary>li>ul>li>a::before {
+  content: counter(summary-parent)"."counter(summary-child)".";
+}
+.book-summary ul.summary>li>ul>li>ul>li>a::before {
+  content: counter(summary-parent)"."counter(summary-child)"."counter(summary-grandchild)".";
+}
+
