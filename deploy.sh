@@ -9,7 +9,7 @@ then
     popd
 fi
 
-rsync -av --delete $(dirname $0)/_book/ ${SITE_DEPLOY_DIR}/
+rsync -av --exclude='/.git' --delete $(dirname $0)/_book/ ${SITE_DEPLOY_DIR}/
 pushd ${SITE_DEPLOY_DIR}
 git add . 
 git commit -a -m "deploy gitbook $(date '+%Y-%m-%d %H:%M:%S')"
