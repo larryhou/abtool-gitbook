@@ -3,6 +3,12 @@
     "description": "abtool入门精粹",
     "plugins": [
         "mathjax",
-        "summary-tree-number"
-    ]
+        "summary-tree-number",
+        "splitter",
+        "popup",
+        "code"
+    ],
+    "pluginsConfig": {
+    }
+    
 }
