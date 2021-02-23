@@ -85,4 +85,5 @@ abtool gtt -a doc/resources/types.tte -o abtool/assetbundles/unity
 1. 升级了Unity版本
 2. 修改了Unity源码里面涉及资源对象的序列化的代码
 3. 修改了`AssetBundleArchive`容器存储结构
-3. 如果需要abtool正常处理所有`MonoBehaviour`组件数据，那么您需要定期编译abtool，不过我们大部分情况下并不关心这部分数据。
+4. 修改了`SerializedFile`存储结构
+5. 如果需要abtool正常处理所有`MonoBehaviour`组件数据，那么您需要定期编译abtool，不过我们大部分情况下并不关心这部分数据。
