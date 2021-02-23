@@ -53,7 +53,7 @@ TypeTree记录了资源对象数据的序列化信息，收集TypeTree的目的�
 * Animator
 * Mesh
 
-如果您现有的项目资源已经覆盖了以上资源类型，那么可以放心使用abtool收集相应的TypeTree数据。然而QuickStart资源包只是覆盖了最小集合的资源类型，如果需要最大限度发挥abtool的效力，笔者强烈建议您扫描尽可能多的ab文件，从而可以收集到尽可能多的Unity类型数据，相信您在后续的日常使用中深刻明白这意味着什么。
+如果您现有的项目资源已经覆盖了以上资源类型，那么可以放心使用abtool收集相应的TypeTree数据。然而QuickStart资源包只是覆盖了最小集合的资源类型，如果需要最大限度发挥abtool的效力，笔者强烈建议您扫描尽可能多的ab文件，从而可以收集到尽可能多的Unity类型数据，相信您在后续的日常使用中会深刻明白这是什么意思。
 
 ```bash
 # doc/resources目录存储了QuickStart资源编译的iOS/Android双平台的ab文件
