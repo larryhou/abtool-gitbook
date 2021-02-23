@@ -1,4 +1,5 @@
 {
+    "author": "larryhou",
     "title": "abtool",
     "description": "abtool入门精粹",
     "plugins": [
@@ -6,9 +7,12 @@
         "summary-tree-number",
         "splitter",
         "popup",
-        "code"
+        "code",
+        "chapter-fold",
+        "-lunr",
+        "-search",
+        "search-pro",
+        "back-to-top-button"
     ],
-    "pluginsConfig": {
-    }
-    
+    "pluginsConfig": {}
 }

@@ -5,7 +5,7 @@
 * [第一章 编译安装](src/start/index.md)
 
 * [第二章 应用案例](src/cases/index.md)
-    * [资源触发的游戏崩溃](src/cases/case_crash.md)
+    * [资源引发崩溃](src/cases/case_crash.md)
     * [资源引用丢失](src/cases/case_noref.md)
     * [显示异常](src/cases/case_display.md)
     * [资源差异比对](src/cases/case_compare.md)
