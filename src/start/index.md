@@ -68,7 +68,7 @@ find . -iname '*.ab' | xargs abtool savetree -a types.tte
 
 #### 生成对象序列化代码
 
-`types.tte`是个二进制文件，我们需要把它转换成C++代码才能最终为abtool所用，通过下面这行命令可以轻松完成这个任务，整个过程就好比使用`protoc`编译`*.proto`文件一样。
+`types.tte`是个二进制文件，把它转换成C++代码才能最终为abtool所用，通过下面这行命令可以轻松完成这个任务，整个过程就好比使用`protoc`编译`*.proto`文件一样。
 
 ```bash
 # 当前cd目录为工程根目录
