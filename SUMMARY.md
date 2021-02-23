@@ -2,13 +2,13 @@
 
 * [简介](README.md)
 
-* [第一章 快速开始](src/start/index.md)
+* [第一章 编译安装](src/start/index.md)
 
 * [第二章 应用案例](src/cases/index.md)
-    * [资源崩溃](src/cases/case_crash.md)
-    * [引用丢失](src/cases/case_noref.md)
+    * [资源触发的游戏崩溃](src/cases/case_crash.md)
+    * [资源引用丢失](src/cases/case_noref.md)
     * [显示异常](src/cases/case_display.md)
-    * [资源差异](src/cases/case_compare.md)
+    * [资源差异比对](src/cases/case_compare.md)
     * [资源逆向](src/cases/case_reverse/index.md)
         * [贴图](src/cases/case_reverse/texture.md)
         * [模型](src/cases/case_reverse/model.md)
@@ -37,8 +37,8 @@
 
 * [第四章 进阶开发](src/developments/index.md)
     * [项目架构](src/developments/project.md)
-    * [资源解析](src/developments/serialization.md)
-    * [代码生成](src/developments/codegen.md)
+    * [文件解析](src/developments/coding.md)
+    * [对象序列化](src/developments/serialization.md)
     * [命令系统](src/developments/command.md)
-    * [文件系统](src/developments/coding.md)
+    * [文件系统](src/developments/filesystem.md)
     * [LUA绑定](src/developments/lua.md)
