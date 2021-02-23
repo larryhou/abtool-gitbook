@@ -68,7 +68,7 @@ find . -iname '*.ab' | xargs abtool savetree -a types.tte
 
 #### 生成对象序列化代码
 
-由于`types.tte`是个二进制文件，我们需要把它转换成C++代码，通过下面这行命令可以轻松完成这个任务。
+`types.tte`是个二进制文件，我们需要把它转换成C++代码才能最终为abtool所用，通过下面这行命令可以轻松完成这个任务，整个过程就好比使用`protoc`编译`*.proto`文件一样。
 
 ```bash
 # 假设当前cd目录为工程根目录
@@ -78,7 +78,7 @@ abtool gtt -a doc/resources/types.tte -o abtool/assetbundles/unity
 
 #### 最终编译abtool
 
-通过上一步骤我们更新了Unity资源对象的序列化代码，所以还需要再次编译，这样我们就最终得到了功能完备的abtool，通过后续的章节可以进一步探索它强大的威力。
+通过上一步骤我们修改了Unity资源对象的序列化代码，所以还需要再次编译，这样我们就最终得到了功能完备的abtool，通过后续的章节可以进一步探索它强大的威力。
 
 > 什么情况下需要重新编译abtool?
 
