@@ -1,4 +1,0 @@
-[submodule "_book"]
-	path = _book
-	url = https://github.com/larryhou/abtool-gitbook.git
-	branch = site
