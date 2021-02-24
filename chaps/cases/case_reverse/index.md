@@ -8,7 +8,7 @@
 
 #### 下载安装包
 
-大家可以通过Google搜索`战歌竞技场 apk`，然后下载相应的apk安装包。笔者使用的版本是`1.5.151`，点击[链接](https://dlied4.myapp.com/myapp/1109006800/cos.release-75620/10040714_com.tencent.hjzqgame_a960942_1.5.151_j2e715.apk)[^1]可直接进行下载，但是鉴于cdn链接的时效性，该文档并不保证该下载链接总是有效，如果链接失效请自行从Google搜索结果里面寻找其他可用下载链接。
+大家可以通过Google搜索`战歌竞技场 apk`，然后下载相应的apk安装包。笔者使用的版本是`1.5.151`，点击[链接](https://dlied4.myapp.com/myapp/1109006800/cos.release-75620/10040714_com.tencent.hjzqgame_a960942_1.5.151_j2e715.apk)[^1]可直接进行下载，但是鉴于cdn链接的时效性，该文档并不保证该下载链接总是可用，如果链接失效请自行从Google搜索结果里面寻找其他可用下载链接。
 
 ![](google-apk.png)
 
