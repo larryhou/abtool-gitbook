@@ -116,7 +116,7 @@ textool __textures/*.tex
 
 ![](textool-save.png)
 
-textool工具依赖第三方贴图解码库[tex2img](https://github.com/K0lb3/tex2img.git)[^1]，该工具封装了[BinomialLLC/basis_universal](https://github.com/BinomialLLC/basis_universal/)[^2]、[Ericsson/ETCPACK](https://github.com/Ericsson/ETCPACK)[^3]和[powervr-graphics/Native_SDK](https://github.com/powervr-graphics/Native_SDK/tree/master/framework/PVRCore/texture)[^4]，在此感谢老哥[K0lb3](https://github.com/K0lb3)[^5]提供的便利。在此基础上笔者增加了`RGBA32`、`RGBA4444`、`RGB24`、`RGB565`和`Alpha8`贴图格式的解码，经过这么一番整合，应该可以应付绝大部分的贴图转码。
+textool工具依赖第三方贴图解码库[tex2img](https://github.com/K0lb3/tex2img.git)[^1]，该工具封装了[BinomialLLC/basis_universal](https://github.com/BinomialLLC/basis_universal/)[^2]、[Ericsson/ETCPACK](https://github.com/Ericsson/ETCPACK)[^3]和[powervr-graphics/Native_SDK](https://github.com/powervr-graphics/Native_SDK/tree/master/framework/PVRCore/texture)[^4]，感谢老哥[K0lb3](https://github.com/K0lb3)[^5]提供的便利。在此基础上笔者增加了`RGBA32`、`RGBA4444`、`RGB24`、`RGB565`和`Alpha8`贴图格式的解码，经过这么一番整合，应该可以应付绝大部分的贴图转码。
 
 
 [^1]: https://github.com/K0lb3/tex2img.git
