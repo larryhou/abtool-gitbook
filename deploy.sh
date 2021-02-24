@@ -12,9 +12,10 @@ then
     popd # SITE_DEPLOY_DIR
 fi
 
-rsync -av --exclude='/.git' --delete book.pdf ${SITE_DEPLOY_DIR}/
 rsync -av --exclude='/.git' --delete _book/ ${SITE_DEPLOY_DIR}/
+rsync -av --exclude='/.git' book.pdf ${SITE_DEPLOY_DIR}/
 pushd ${SITE_DEPLOY_DIR}
+git add -f book.pdf
 git add . 
 git commit -a -m "deploy gitbook $(date '+%Y-%m-%d %H:%M:%S')"
 git push
