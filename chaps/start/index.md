@@ -32,8 +32,6 @@ cmake ..
 cmake --build .
 ```
 
-
-
 #### 生成TypeTree数据
 
 TypeTree记录了资源对象数据的序列化信息，收集TypeTree的目的是为了把Unity的类型信息集成到abtool工具里面，只有这样abtool才有可能实现它的功能。
