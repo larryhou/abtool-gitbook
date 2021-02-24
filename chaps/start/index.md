@@ -1,12 +1,14 @@
 # 编译安装
+---
 
 由于笔者日常工作环境中很少使用其他系统平台，暂时abtool只支持针对macOS系统的编译运行，感兴趣的朋友可以自行适配其他系统平台，涉及平台差异的部分主要是以下几个外部链接库：
 
-- libreadline
-- libfbxsdk
-- libiconv
-- libxml2
-- libz
+- libreadline.tbd
+- libfbxsdk.a
+    - Foundation.framework
+    - libiconv.tbd
+    - libxml2.tbd
+    - libz.tbd
 
 abtool源码基于C++14标准库实现，理论上处理好以上几个外部库的依赖问题即可成功编译。
 
@@ -16,9 +18,11 @@ abtool源码基于C++14标准库实现，理论上处理好以上几个外部库
 
 1. Xcode编译
 
-打开Xcode，使用组合键`⌘+B`即可进行源码编译，之后编译可以在终端环境或者shell脚本里面随意使用，这是生成abtool工具的最简单的方式，需要注意的是请确保目标目录`/usr/local/bin`已被预先创建。
+    打开Xcode，使用组合键`⌘+B`即可进行源码编译，之后编译可以在终端环境或者shell脚本里面随意使用，这是生成abtool工具的最简单的方式，需要注意的是请确保目标目录`/usr/local/bin`已被预先创建。
 
 2. CMake编译
+
+    执行如下脚本，即可在`build/bin`目录得到abtool命令行工具文件。
 
 ```bash
 # 当前cd目录为工程根目录
@@ -28,7 +32,7 @@ cmake ..
 cmake --build .
 ```
 
-脚本执行完，会在`build/bin`目录生成abtool命令行。
+
 
 #### 生成TypeTree数据
 
