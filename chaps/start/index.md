@@ -22,7 +22,7 @@ abtool源码基于C++14标准库实现，理论上处理好以上几个外部库
 
 2. CMake编译
 
-    执行如下脚本，即可在`build/bin`目录得到abtool命令行工具文件。
+    执行如下脚本，即可在`build/bin`目录得到abtool命令行工具。
 
 ```bash
 # 当前cd目录为工程根目录
@@ -36,7 +36,7 @@ cmake --build .
 
 TypeTree记录了资源对象数据的序列化信息，收集TypeTree的目的是为了把Unity的类型信息集成到abtool工具里面，只有这样abtool才有可能实现它的功能。
 
-为了让大家快速体验整个工具编译过程，笔者在工程doc目录准备了`QuickStart.unitypackage`资源包，现在您只需要新建一个新的Unity工程，然后导入所有资源，通过Unity菜单`abtool/Build Asset Bundles`即可快速生成包含了TypeTree信息的ab文件，该资源包包含了能够让abtool源码正常编译的最小集合，准确来说是，资源里面包含了以下编译必须的资源对象类型：
+为了让大家快速体验整个工具编译过程，笔者在工程doc目录准备了`QuickStart.unitypackage`资源包，现在您只需要新建一个Unity工程，然后导入所有资源，通过Unity菜单`abtool/Build Asset Bundles`即可快速生成包含了TypeTree数据的ab文件，该资源包包含了能够让abtool源码正常编译的最小集合，具体来说是，资源里面包含了以下编译必须的资源对象类型：
 
 * GameObject
 * RectTransform
