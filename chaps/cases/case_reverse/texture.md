@@ -7,7 +7,7 @@
 ```bash
 find AssetBundles -iname '*.god' | xargs abtool list -r
 ```
-从结果里面我们选择`artresource_captainpbr_captain_201.god`作为演示资源。
+从结果里面我们选择`artresource_captainpbr_captain_202.god`作为演示资源。
 ![](captain_202_tex.png)
 
 #### 提取贴图资源
@@ -15,7 +15,7 @@ find AssetBundles -iname '*.god' | xargs abtool list -r
 通过abtool的`savetex`命令可以一次性保存ab文件里面所有的贴图资源，默认输出到当前目录的`__textures`目录，也可以添加`--output`参数指定其他存放目录。
 
 ```bash
-abtool savetex AssetBundles/artresource_captainpbr_captain_201.god
+abtool savetex AssetBundles/artresource_captainpbr_captain_202.god
 ```
 
 ![](savetex.png)
