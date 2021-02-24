@@ -7,7 +7,7 @@
 * [第二章 应用案例](chaps/cases/index.md)
     * [资源引发崩溃](chaps/cases/case_crash.md)
     * [资源引用丢失](chaps/cases/case_noref.md)
-    * [显示异常](chaps/cases/case_display.md)
+    * [资源显示异常](chaps/cases/case_display.md)
     * [资源差异比对](chaps/cases/case_compare.md)
     * [资源逆向](chaps/cases/case_reverse/index.md)
         * [贴图](chaps/cases/case_reverse/texture.md)
