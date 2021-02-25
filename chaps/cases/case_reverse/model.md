@@ -17,7 +17,7 @@ FBX文件可以通过[Autodesk FBX Review](https://www.autodesk.com/products/fbx
 
 ![](model.png)
 
-结合贴图逆向得到的贴图，那么我可以尝试用基础贴图简单渲染一下。
+结合贴图逆向得到的贴图，那么我可以尝试用基础贴图`Captain_202201_body_b.tga`简单渲染一下。
 
 ![](model-basic.png)
 
