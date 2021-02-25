@@ -1,7 +1,7 @@
 # 资源引用丢失
 ---
 
-在增量编译过程中如果Unity闪退了，除了会产生导致崩溃的问题资源，也会导致一些不那么严重、但是非常奇怪的渲染结果：屏幕渲染出现紫块或者渲染效果异常。
+在增量编译过程中如果Unity闪退了，除了会产生导致崩溃的问题资源，也会导致一些不那么严重、但是非常奇怪的渲染结果：屏幕渲染出现紫块或者渲染效果异常，通过`scanref`也可以发现这样的问题，如下日志里面还有`missing`标记。
 
 ```
 archive:/cab-f8642b11cae21bfbe1fac93206d98fba/cab-f8642b11cae21bfbe1fac93206d98fba dynamic/module/vehiclesskin_bundle_52_02!7!forcedownload!cod_models$vehicles$tank$5!2.pak
