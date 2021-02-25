@@ -1,7 +1,15 @@
 # 模型
 ---
 
-在该案里面我们继续使用`artresource_captainpbr_captain_202.god`文件来演示，相比贴图逆向，模型逆向就简单多了，一行命令就可以把ab资源里面的模型导出为`*.fbx`文件，可以用使用[Autodesk FBX Review](https://www.autodesk.com/products/fbx/fbx-review)[^1]打开
+在该案里面我们继续使用`artresource_captainpbr_captain_202.god`文件来演示，相比贴图逆向，模型逆向就简单多了，一行命令就可以把ab资源里面的模型导出为`*.fbx`文件。
+
+```bash
+$ abtool savefbx AssetBundles/Android/artresource_captainpbr_captain_202.god
+```
+
+![](savefbx.png)
+
+FBX文件可以通过[Autodesk FBX Review](https://www.autodesk.com/products/fbx/fbx-review)[^1]打开
 
 ![](model-review.png)
 
