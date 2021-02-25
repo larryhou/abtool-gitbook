@@ -23,7 +23,7 @@ public static AssetBundleManifest BuildAssetBundles(
 DisableWriteTypeTree = 8,
 ```
 
-由于abtool绝大部分功能都基于TypeTree，那是不是关闭TypeTree资源就安全了？没那么简单！TypeTree是由Unity生成，换句话说，如果拿到相同版本的Unity也是可以轻易获取TypeTree的，在这种情况下，关掉TypeTree的意义仅仅是防止了破解`MonoBehaviour`，防护等级是很弱的！换句话说，如果您用了Unity公开发行的版本（标准版），那么您的的游戏资产是在裸奔的！
+由于abtool绝大部分功能都基于TypeTree，那是不是关闭TypeTree资源就安全了？没那么简单！TypeTree是由Unity生成，换句话说，如果拿到相同版本的Unity也是可以轻易获取TypeTree的，在这种情况下，关掉TypeTree的意义仅仅是防止了破解`MonoBehaviour`，防护等级是很弱的！换句话说，如果您用了Unity公开发行的版本（标准版），那么您的的游戏资产完全是在裸奔的！
 
 #### 修改关键资源序列化
 
@@ -52,11 +52,11 @@ struct Texture2D: public Object {
 
 在资源对象序列化过程中，`string`/`map`/`set`/`vector`等数据类型均被当做数组来处理：先用4字节存储数组长度，然后按顺序存储数组元素，对于`string`它的数组元素类型是`char`。基于此，我们可以在标准版的Unity源码里面做一些微小改动，比如把上述类型序列化顺序交换位置，或者在这些字段的序列化之前写入一个很大的整形，这样通过标准版Unity反编译资源就会导致崩溃或者无限循环。该保护措施的本质是修改资源类型的数据结构，使其与标准版Unity生成TypeTree产生差异，从而导致通过标准版Unity破解资源的方法失效。
 
-#### 修改AssetBundleArchive存储结构
+#### 修改`AssetBundleArchive`存储结构
 
 每个ab资源在Unity里面会都会通过一个`AssetBundleArchive`容器来存储，它的作用是压缩资源对象数据并提供文件寻址功能，并没有什么特别的，如果您的项目有源码完全可以自行设计一个实现类似功能的资源容器，比如王者荣耀、原神游戏做了类似的设计。
 
-#### 修改SerializedFile存储结构
+#### 修改`SerializedFile`存储结构
 
 除了定制资源容器，还可以通过修改容器内资源的存储方式，比如修改`SerializedFile`的metadata数据的组织方式。
 
