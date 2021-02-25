@@ -84,13 +84,13 @@ T archive:/cab-935fbd22f82316cda48c391a5d38e03b/cab-935fbd22f82316cda48c391a5d38
 
 ![](crash/notmesh.png)
 
-把`Texture2D`对象强转成`Mesh`对象赋值给`SkinnedMeshRenderer`对象，最终就会导致崩溃。庆幸的现在可以通过`abtool scanref`扫描游戏的所有资源，30秒就可以扫描3G左右的ab资源，可以说非常效率。
+把`Texture2D`对象强转成`Mesh`对象赋值给`SkinnedMeshRenderer`对象，最终就会导致崩溃。庆幸的现在可以通过`abtool scanref`扫描游戏的所有资源，30秒就可以扫描3G左右的ab资源，可以说是非常高效的。
 
 ```
 find . -iname '*.pak' | xargs abtool scanref
 ```
 
-`scanref`会把扫描数据存到当前目录的`assets.ref`文件，下次运行的时候`scanref`会自动读取缓存文件`assets.ref`，这样不用再次扫描ab资源就可以快速得到相同的结果，直接把耗时降到2秒。
+`scanref`会把扫描数据缓存到当前目录的`assets.ref`文件，下次运行的时候`scanref`会自动读取缓存文件，这样不用再次扫描ab资源就可以快速得到相同的结果，直接把耗时降到2秒。
 
 ```
 abtool scanref
