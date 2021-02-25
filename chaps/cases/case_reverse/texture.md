@@ -2,6 +2,7 @@
 ---
 
 #### 选择ab文件
+
 首先我们需要找到一个包含贴图资源的ab文件，如果您不确定是哪个ab满足要求，那么可以使用`list`命令收集所有进包的资源路径，然后反过来从贴图资源的路径查找相应的ab文件。
 
 ```bash
@@ -15,17 +16,17 @@ find AssetBundles -iname '*.god' | xargs abtool list -r
 通过abtool的`savetex`命令可以一次性保存ab文件里面所有的贴图资源，默认输出到当前目录的`__textures`目录，也可以添加`--output`参数指定其他存放目录。
 
 ```bash
-abtool savetex AssetBundles/artresource_captainpbr_captain_202.god
+abtool savetex AssetBundles/Android/artresource_captainpbr_captain_202.god
 ```
 
 ![](savetex.png)
 
-需要说明的是：`savetex`保存的贴图有着固定命名规范，其格式为[filename].[宽]x[高].[贴图格式].tex，除了filename，其余文件名内容是不能修改的，否则在接下来的贴图格式转码里面会失败。
+需要说明的是：`savetex`保存的贴图有着固定命名规范，其格式为[filename].[宽]x[高].[贴图格式].tex，除了filename，其余文件名内容是不能修改的，否则在接下来的贴图转码操作会失败。
 
 
 #### 贴图格式转换
 
-从上一步骤得到的贴图都是`*.tex`格式的文件，并不是我们常见的方便审阅的png或者jpg格式，它们是GPU渲染用到的贴图格式，所以还需要进行一次格式转换。在工程根目录放置了python脚本工具`textool.py`，它可以自动批量把`*.tex`文件转换成`*.tga`文件。
+从上一步骤得到的贴图都是`*.tex`格式的文件，并非用普通图片浏览工具可以直接查看文件格式，它们被做了特殊编码编码以便GPU渲染时可以被正常读取，所以还需要做贴图转码。在工程根目录放置了python脚本工具`textool.py`，它可以批量地把`*.tex`文件转换成项目中常见的`*.tga`文件。
 
 ```python
 import re, struct
@@ -116,7 +117,7 @@ textool __textures/*.tex
 
 ![](textool-save.png)
 
-textool工具依赖第三方贴图解码库[tex2img](https://github.com/K0lb3/tex2img.git)[^1]，该工具封装了[BinomialLLC/basis_universal](https://github.com/BinomialLLC/basis_universal/)[^2]、[Ericsson/ETCPACK](https://github.com/Ericsson/ETCPACK)[^3]和[powervr-graphics/Native_SDK](https://github.com/powervr-graphics/Native_SDK/tree/master/framework/PVRCore/texture)[^4]，感谢老哥[K0lb3](https://github.com/K0lb3)[^5]提供的便利。在此基础上笔者增加了`RGBA32`、`RGBA4444`、`RGB24`、`RGB565`和`Alpha8`贴图格式的转码，经过这么一番整合，应该可以应付绝大部分的贴图转码。
+textool工具依赖第三方贴图解码库[tex2img](https://github.com/K0lb3/tex2img.git)[^1]，该工具封装了[BinomialLLC/basis_universal](https://github.com/BinomialLLC/basis_universal/)[^2]、[Ericsson/ETCPACK](https://github.com/Ericsson/ETCPACK)[^3]和[powervr-graphics/Native_SDK](https://github.com/powervr-graphics/Native_SDK/tree/master/framework/PVRCore/texture)[^4]，感谢老哥[K0lb3](https://github.com/K0lb3)[^5]提供的便利。笔者在此基础上增加了`RGBA32`、`RGBA4444`、`RGB24`、`RGB565`和`Alpha8`贴图格式的转码，经过这么一番整合，应该可以应付绝大部分的贴图转码。
 
 
 [^1]: https://github.com/K0lb3/tex2img.git
