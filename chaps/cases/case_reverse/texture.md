@@ -25,7 +25,7 @@ abtool savetex AssetBundles/artresource_captainpbr_captain_202.god
 
 #### 贴图格式转换
 
-从上一步骤得到的贴图都是`*.tex`格式的文件，并不是我们常见的方便审阅的png或者jpg格式，它们是GPU渲染用到的贴图格式，所以还需要进行一次格式转换。在工程根目录放置了python脚本工具`textool.py`，它可以自动批量把`*.tex`文件转换成`*.png`或`*.jpg`，具体根据贴图是否包含透明通道来最终决定存储格式。
+从上一步骤得到的贴图都是`*.tex`格式的文件，并不是我们常见的方便审阅的png或者jpg格式，它们是GPU渲染用到的贴图格式，所以还需要进行一次格式转换。在工程根目录放置了python脚本工具`textool.py`，它可以自动批量把`*.tex`文件转换成`*.tga`文件。
 
 ```python
 import re, struct
@@ -90,7 +90,7 @@ def main():
             mode = 'L'
         else: continue
         result = Image.frombytes(mode, tuple(texture_size), image, 'raw')
-        savename = re.sub(r'(\.[^.]+){3}$', '', filename) + '.' + ('png' if mode == 'RGBA' else 'jpg')
+        savename = re.sub(r'(\.[^.]+){3}$', '', filename) + '.tga'
         result.save(savename)
         print('+ {} => {}'.format(filename, savename))
 
