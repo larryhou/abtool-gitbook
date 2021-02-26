@@ -182,4 +182,12 @@ second:UnityTexEnv
         m_FileID = 2
         m_PathID = 6
 ```
-`m_FileID=0`表示当前资源指针指向当前文件内的资源对象，`m_PathID=0`表示当前资源指针为空，这时通过Unity的Inspector可以看到资源的槽位是空的，所以如果发现某个资源指针的`m_PathID=0`那么这就是一个资源空引用案例。
+`m_FileID=0`表示当前资源指针指向当前文件内的资源对象，`m_PathID=0`表示当前资源指针为空，这时通过Unity的Inspector可以看到资源的槽位是空的，所以如果发现某个资源指针的`m_PathID=0`那么这就是一个资源空引用案例，如下所示。
+
+```c++
+first:string = _HeightMap
+second:UnityTexEnv
+    m_Texture:PPtr<Texture>
+        m_FileID = 0
+        m_PathID = 0
+```
