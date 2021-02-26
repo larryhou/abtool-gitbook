@@ -10,7 +10,7 @@
         * [模型](chaps/cases/reverse/model.md)
     * [资源防护](chaps/cases/protect.md)
     * [资源引发崩溃](chaps/cases/crash.md)
-    * [资源引用丢失](chaps/cases/noref.md)
+    * [资源引用丢失](chaps/cases/missing.md)
     * [资源显示异常](chaps/cases/display.md)
     * [资源差异比对](chaps/cases/compare.md)
     * [资源编辑](chaps/cases/edit.md)

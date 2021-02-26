@@ -9,7 +9,7 @@
 
 图中的日志是什么含义呢？那是纯正的崩溃的味道！
 ```
-T archive:/cab-935fbd22f82316cda48c391a5d38e03b/cab-935fbd22f82316cda48c391a5d38e03b i:4 expect=Mesh:43 actual=Texture2D:28
+T archive:/cab-935fbd22f82316cda48c391a5d38e03b/cab-935fbd22f82316cda48c391a5d38e03b i:4 Mesh => Texture2D
 ```
 针对其中一行日志简单解释下，`archive:/`开头一串文本是ab里面`SerializedFile`的路径，可以用来寻址。资源`dynamic/module/role_bundle_08!7!forcedownload!cod_models$avatar$seal6_003_bluewhite.pak`里面id为`767`的`SkinnedMeshRenderer`对象拥有一个外部资源指针`PPtr<Mesh>`，指向另外一个ab资源文件(`archive:/cab-935fbd22f82316cda48c391a5d38e03b/cab-935fbd22f82316cda48c391a5d38e03b`)中索引为`m_PathID=4`的对象，但是目标引用路径的资源其实是个`Texture2D`对象。
 
