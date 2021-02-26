@@ -700,6 +700,60 @@
                                 
                                 <h1 id="&#x8D44;&#x6E90;&#x5DEE;&#x5F02;&#x6BD4;&#x5BF9;">&#x8D44;&#x6E90;&#x5DEE;&#x5F02;&#x6BD4;&#x5BF9;</h1>
 <hr>
+<p>&#x8DDF;&#x8FDB;&#x8FC7;Unity&#x8D44;&#x6E90;&#x70ED;&#x66F4;&#x53D1;&#x5E03;&#x7684;&#x670B;&#x53CB;&#x5C31;&#x4F1A;&#x6709;&#x611F;&#x89E6;&#xFF0C;&#x6BCF;&#x6B21;&#x53D1;&#x5E03;&#x90FD;&#x4F1A;&#x81EA;&#x6211;&#x7075;&#x9B42;&#x62F7;&#x95EE;&#xFF1A;&#x53D8;&#x66F4;&#x7684;ab&#x8D44;&#x6E90;&#x662F;&#x5426;&#x90FD;&#x9700;&#x8981;&#x53D1;&#x5E03;&#xFF1F;&#x6709;&#x4E9B;&#x8D44;&#x6E90;&#x660E;&#x786E;&#x6CA1;&#x6709;&#x6539;&#x52A8;&#xFF0C;&#x4F46;&#x662F;&#x6253;&#x51FA;&#x6765;&#x7684;ab&#x6587;&#x4EF6;md5&#x5374;&#x662F;&#x4E0D;&#x540C;&#x7684;&#xFF0C;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x4E0D;&#x53D1;&#x4E0D;&#x653E;&#x5FC3;&#xFF0C;&#x53D1;&#x4E86;&#x4E5F;&#x4E0D;&#x5B89;&#x5FC3;&#xFF01;</p>
+<p>&#x90A3;&#x4E48;&#x6709;&#x4E86;abtool&#x90A3;&#x53EF;&#x5C31;&#x7B80;&#x5355;&#x591A;&#x4E86;&#xFF0C;&#x901A;&#x8FC7;<code>dump</code>&#x547D;&#x4EE4;&#x628A;ab&#x6587;&#x4EF6;&#x89E3;&#x538B;&#x4E3A;&#x683C;&#x5F0F;&#x6574;&#x9F50;&#x3001;&#x5F00;&#x53D1;&#x53CB;&#x597D;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5F53;&#x524D;cd&#x76EE;&#x5F55;&#x4E3A;ab&#x8D44;&#x6E90;&#x5B58;&#x50A8;&#x76EE;&#x5F55;</span>
+find . -iname <span class="hljs-string">&apos;*.pak&apos;</span> | <span class="hljs-keyword">while</span> <span class="hljs-built_in">read</span> pak
+<span class="hljs-keyword">do</span> 
+    abtool dump <span class="hljs-string">&quot;<span class="hljs-variable">${pak}</span>&quot;</span> | tee <span class="hljs-string">&quot;<span class="hljs-variable">${pak}</span>.log&quot;</span>
+<span class="hljs-keyword">done</span>
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x4E09;&#x884C;bash&#x811A;&#x672C;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x628A;&#x6240;&#x6709;&#x7684;ab&#x6587;&#x4EF6;&#x8F6C;&#x6210;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x6253;&#x5F00;BeyondCompare&#x5C31;&#x4E00;&#x5207;&#x90FD;&#x660E;&#x4E86;&#x4E86;&#x3002;&#x5BF9;&#x4E8E;&#x4FEE;&#x6539;&#x7684;&#x8D44;&#x6E90;&#x6211;&#x4EEC;&#x4F1A;&#x6709;&#x5FC3;&#x7406;&#x9884;&#x671F;&#xFF0C;&#x4E00;&#x822C;&#x6BD4;&#x8F83;&#x5728;&#x610F;&#x7684;&#x662F;&#x9884;&#x671F;&#x4E4B;&#x5916;&#x88AB;&#x4FEE;&#x6539;&#x5230;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x636E;&#x7B14;&#x8005;&#x7684;&#x7ECF;&#x9A8C;&#x53EF;&#x4EE5;&#x5927;&#x6982;&#x5206;&#x4E3A;&#x4E00;&#x4E0B;&#x51E0;&#x7C7B;&#xFF1A;</p>
+<ul>
+<li>&#x4F9D;&#x8D56;&#x5217;&#x8868;&#x987A;&#x5E8F;</li>
+<li>&#x589E;&#x5220;&#x8FDB;&#x5305;&#x6587;&#x4EF6;</li>
+<li>&#x52A8;&#x753B;&#x6D6E;&#x70B9;&#x6570;&#x5E8F;&#x5217;&#x5316;&#x4E0D;&#x7A33;&#x5B9A;</li>
+<li>&#x4FEE;&#x6539;MonoBehaviour&#x6210;&#x5458;&#x53D8;&#x91CF;</li>
+</ul>
+<h4 id="&#x4F9D;&#x8D56;&#x5217;&#x8868;&#x987A;&#x5E8F;">&#x4F9D;&#x8D56;&#x5217;&#x8868;&#x987A;&#x5E8F;</h4>
+<p>&#x6BCF;&#x4E2A;ab&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x90FD;&#x6709;&#x4E2A;<code>AssetBundle</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5927;&#x81F4;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">struct</span> AssetBundle {
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> m_Name;  <span class="hljs-comment">// 1</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;PPtr&lt;<span class="hljs-keyword">struct</span> Object&gt;&gt; m_PreloadTable;  <span class="hljs-comment">// 2</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">multimap</span>&lt;<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>,AssetInfo&gt; m_Container;  <span class="hljs-comment">// 3</span>
+    AssetInfo m_MainAsset;  <span class="hljs-comment">// 4</span>
+    <span class="hljs-keyword">uint32_t</span> m_RuntimeCompatibility;  <span class="hljs-comment">// 5</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> m_AssetBundleName;  <span class="hljs-comment">// 6</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&gt; m_Dependencies;  <span class="hljs-comment">// 7</span>
+    <span class="hljs-keyword">bool</span> m_IsStreamedSceneAssetBundle;  <span class="hljs-comment">// 8</span>
+    <span class="hljs-keyword">int32_t</span> m_ExplicitDataLayout;  <span class="hljs-comment">// 9</span>
+    <span class="hljs-keyword">int32_t</span> m_PathFlags;  <span class="hljs-comment">// 10</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">map</span>&lt;<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>,<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span>&gt; m_SceneHashes;  <span class="hljs-comment">// 11</span>
+};
+</code></pre>
+<p><code>AssetBundle::m_Dependencies</code>&#x5B57;&#x6BB5;&#x5B58;&#x50A8;&#x4E86;&#x5F53;&#x524D;ab&#x4F9D;&#x8D56;&#x7684;&#x5176;&#x4ED6;ab&#x6587;&#x4EF6;&#x5217;&#x8868;&#xFF0C;Unity&#x5728;&#x6253;&#x5305;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x80FD;&#x751F;&#x6210;&#x4E0D;&#x7A33;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x4F46;&#x662F;&#x5217;&#x8868;&#x5185;&#x5BB9;&#x76F8;&#x540C;&#x3002;</p>
+<p><img src="compare/order.png" alt=""></p>
+<h4 id="&#x589E;&#x5220;&#x8FDB;&#x5305;&#x6587;&#x4EF6;">&#x589E;&#x5220;&#x8FDB;&#x5305;&#x6587;&#x4EF6;</h4>
+<p>&#x5982;&#x679C;&#x751F;&#x6210;ab&#x6587;&#x4EF6;&#x7684;&#x914D;&#x7F6E;&#x53D1;&#x751F;&#x4E86;&#x53D8;&#x5316;&#xFF0C;&#x6BD4;&#x5982;&#x589E;&#x5220;&#x4E86;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x90A3;&#x4E48;&#x5373;&#x4F7F;&#x6E38;&#x620F;&#x8D44;&#x4EA7;&#x6CA1;&#x53D8;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4E5F;&#x4F1A;&#x5BFC;&#x81F4;ab&#x6587;&#x4EF6;&#x6700;&#x7EC8;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x3002;
+<img src="compare/list.png" alt=""></p>
+<h4 id="&#x52A8;&#x753B;&#x8D44;&#x4EA7;&#x6D6E;&#x70B9;&#x6570;&#x5E8F;&#x5217;&#x5316;&#x4E0D;&#x7A33;&#x5B9A;">&#x52A8;&#x753B;&#x8D44;&#x4EA7;&#x6D6E;&#x70B9;&#x6570;&#x5E8F;&#x5217;&#x5316;&#x4E0D;&#x7A33;&#x5B9A;</h4>
+<p><code>AnimationClip</code>&#x52A8;&#x753B;&#x8D44;&#x4EA7;&#x91CC;&#x9762;Hermite&#x6837;&#x6761;&#x66F2;&#x7EBF;&#x51FD;&#x6570;&#x5F88;&#x5BB9;&#x6613;&#x4EA7;&#x751F;&#x4E0D;&#x7A33;&#x5B9A;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x4E3B;&#x8981;&#x8868;&#x73B0;&#x4E3A;&#x5F80;&#x6781;&#x5927;&#x6216;&#x8005;&#x6781;&#x5C0F;&#x503C;&#x65B9;&#x5411;&#x53D8;&#x5316;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">struct</span> StreamedHermiteClip {
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">uint32_t</span>&gt; data;  <span class="hljs-comment">// 1</span>
+    <span class="hljs-keyword">uint32_t</span> curveCount;  <span class="hljs-comment">// 2</span>
+    <span class="hljs-keyword">float</span> timeMin;  <span class="hljs-comment">// 3</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">float</span>&gt; coefMin;  <span class="hljs-comment">// 4</span>
+    <span class="hljs-keyword">float</span> timeRange;  <span class="hljs-comment">// 5</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">float</span>&gt; coefRange;  <span class="hljs-comment">// 6</span>
+};
+</code></pre>
+<p><img src="compare/float.png" alt=""></p>
+<h4 id="&#x4FEE;&#x6539;monobehaviour&#x6210;&#x5458;&#x53D8;&#x91CF;">&#x4FEE;&#x6539;MonoBehaviour&#x6210;&#x5458;&#x53D8;&#x91CF;</h4>
+<p><code>MonoBehaviour</code>&#x811A;&#x672C;&#x5728;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x628A;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x6309;&#x7167;&#x4E00;&#x5B9A;&#x89C4;&#x5219;&#x7B97;&#x51FA;&#x4E00;&#x4E2A;128&#x4F4D;&#x7684;hash&#x503C;&#xFF0C;&#x5982;&#x679C;&#x4FEE;&#x6539;&#x4E86;&#x811A;&#x672C;&#x53D8;&#x91CF;&#x90A3;&#x4E48;&#x7406;&#x8BBA;&#x4E0A;&#x662F;&#x4E0D;&#x80FD;&#x591F;&#x70ED;&#x66F4;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x8FD0;&#x884C;&#x65F6;&#x5C06;&#x65E0;&#x6CD5;&#x5BF9;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x5BF9;&#x8C61;&#x52A0;&#x8F7D;&#xFF0C;&#x4E00;&#x822C;&#x53EA;&#x6709;&#x5546;&#x5E97;&#x7248;&#x672C;&#x53D1;&#x5E03;&#x7684;&#x65F6;&#x5019;&#x624D;&#x53D1;&#x5E03;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x811A;&#x672C;&#x3002;
+<img src="compare/typetree.png" alt=""></p>
+<p>&#x4F46;&#x662F;&#x7A0B;&#x5E8F;&#x7248;&#x672C;&#x53D1;&#x5E03;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E00;&#x822C;&#x8FD8;&#x4F1A;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x95EE;&#x9898;
+<img src="compare/mono.png" alt=""></p>
+<p><img src="compare/cmphash.png" alt=""></p>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -744,7 +798,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"资源差异比对","level":"1.3.6","depth":2,"next":{"title":"资源编辑","level":"1.3.7","depth":2,"path":"chaps/cases/edit.md","ref":"chaps/cases/edit.md","articles":[]},"previous":{"title":"资源显示异常","level":"1.3.5","depth":2,"path":"chaps/cases/display.md","ref":"chaps/cases/display.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"abtool入门精粹"},"file":{"path":"chaps/cases/compare.md","mtime":"2021-02-26T07:25:58.262Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-25T05:28:58.479Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"资源差异比对","level":"1.3.6","depth":2,"next":{"title":"资源编辑","level":"1.3.7","depth":2,"path":"chaps/cases/edit.md","ref":"chaps/cases/edit.md","articles":[]},"previous":{"title":"资源显示异常","level":"1.3.5","depth":2,"path":"chaps/cases/display.md","ref":"chaps/cases/display.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"abtool入门精粹"},"file":{"path":"chaps/cases/compare.md","mtime":"2021-02-26T09:24:58.130Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-25T05:28:58.479Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
