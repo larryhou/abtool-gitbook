@@ -14,7 +14,7 @@ abtool源码基于C++14标准库实现，理论上处理好这些编译依赖问
 
 #### 首次编译abtool
 
-如果您不是第一次使用abtool，也就是说您手上已经有了一份abtool工具，那么可以跳过该步骤，直接进行下一步操作。
+如果你不是第一次使用abtool，也就是说你手上已经有了一份abtool工具，那么可以跳过该步骤，直接进行下一步操作。
 
 1. Xcode编译
 
@@ -36,7 +36,7 @@ cmake --build .
 
 TypeTree记录了资源对象数据的序列化信息，收集TypeTree的目的是为了把Unity的类型信息集成到abtool工具里面，只有这样abtool才有可能实现它的功能。
 
-为了让大家快速体验整个工具编译过程，笔者在工程doc目录准备了`QuickStart.unitypackage`资源包，现在您只需要新建一个Unity工程，然后导入所有资源，通过Unity菜单`abtool/Build Asset Bundles`即可快速生成包含了TypeTree数据的ab文件，该资源包包含了能够让abtool源码正常编译的最小集合，具体来说是，资源里面包含了以下编译必须的资源对象类型：
+为了让大家快速体验整个工具编译过程，笔者在工程doc目录准备了`QuickStart.unitypackage`资源包，现在你只需要新建一个Unity工程，然后导入所有资源，通过Unity菜单`abtool/Build Asset Bundles`即可快速生成包含了TypeTree数据的ab文件，该资源包包含了能够让abtool源码正常编译的最小集合，具体来说是，资源里面包含了以下编译必须的资源对象类型：
 
 * GameObject
 * RectTransform
@@ -56,7 +56,7 @@ TypeTree记录了资源对象数据的序列化信息，收集TypeTree的目的�
 * Animator
 * Mesh
 
-如果您现有的项目资源已经覆盖了以上资源类型，那么可以放心使用abtool收集相应的TypeTree数据。然而QuickStart资源包只是覆盖了最小集合的资源类型，如果需要最大限度发挥abtool的功效，笔者强烈建议您扫描尽可能多的ab文件，从而可以收集到尽可能多的Unity类型数据，这样会让您定位资源问题更加得心应手，相信您在后续的日常使用中会深刻明白这一点。
+如果你现有的项目资源已经覆盖了以上资源类型，那么可以放心使用abtool收集相应的TypeTree数据。然而QuickStart资源包只是覆盖了最小集合的资源类型，如果需要最大限度发挥abtool的功效，笔者强烈建议你扫描尽可能多的ab文件，从而可以收集到尽可能多的Unity类型数据，这样会让你定位资源问题更加得心应手，相信你在后续的日常使用中会深刻明白这一点。
 
 ```bash
 # doc/resources目录存储了QuickStart资源编译的iOS/Android双平台的ab文件
@@ -88,4 +88,4 @@ abtool gtt -a doc/resources/types.tte -o abtool/assetbundles/unity
 2. 修改了Unity源码里面涉及资源对象的序列化的代码
 3. 修改了`AssetBundleArchive`容器存储结构
 4. 修改了`SerializedFile`存储结构
-5. 如果需要abtool正常处理所有`MonoBehaviour`组件数据，那么您需要定期编译abtool，不过我们大部分情况下并不关心这部分数据。
+5. 如果需要abtool正常处理所有`MonoBehaviour`组件数据，那么你需要定期编译abtool，不过我们大部分情况下并不关心这部分数据。

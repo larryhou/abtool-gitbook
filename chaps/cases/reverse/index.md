@@ -31,7 +31,7 @@ cd assets
 
 #### 编译
 
-我们在前面章节已经学习了工具编译过程，由于该案例用到的ab资源属于某个特定Unity版本，所以需要依据编译流程手机资源TypeTree并重新编译abtool，否则您将无法正常通过abtool进行后续的资源逆向操作。
+我们在前面章节已经学习了工具编译过程，由于该案例用到的ab资源属于某个特定Unity版本，所以需要依据编译流程手机资源TypeTree并重新编译abtool，否则你将无法正常通过abtool进行后续的资源逆向操作。
 
 ```bash
 find . -iname '*.god' | xargs abtool savetree
