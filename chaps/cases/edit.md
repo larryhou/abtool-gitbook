@@ -21,7 +21,7 @@ abtool list dataconfig.god
 abtool saveta dataconfig.god
 ```
 
-尝试用`protoc`解析下发现protobuf序列化的配置文件
+尝试用`protoc`解析后发现它们都是`protobuf`序列化的配置文件
 ```
 protoc --decode_raw < __textassets/dataconfig_chess_board_skin_conf.bytes | pbdecode
 ```
