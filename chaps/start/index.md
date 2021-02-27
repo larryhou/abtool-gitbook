@@ -12,7 +12,7 @@
 
 abtool源码基于C++14标准库实现，理论上处理好这些编译依赖问题即可完成适配。
 
-#### 首次编译abtool
+#### 首次编译
 
 如果你不是第一次使用abtool，也就是说你手上已经有了一份abtool工具，那么可以跳过该步骤，直接进行下一步操作。
 
@@ -78,7 +78,7 @@ abtool gtt -a doc/resources/types.tte -o abtool/assetbundles/unity
 ```
 由于上面的脚本是在工程根目录执行，并且代码的输出目录为`abtool/assetbundles/unity`，所以当脚本执行完成后工程的代码就得到了更新。
 
-#### 最终编译abtool
+#### 最终编译
 
 通过上一步骤我们修改了Unity资源对象的序列化代码，所以还需要再次编译，这样我们就最终得到了功能完备的abtool，通过后续的章节可以逐渐窥探它强大的威力。
 
@@ -89,3 +89,11 @@ abtool gtt -a doc/resources/types.tte -o abtool/assetbundles/unity
 3. 修改了`AssetBundleArchive`容器存储结构
 4. 修改了`SerializedFile`存储结构
 5. 如果需要abtool正常处理所有`MonoBehaviour`组件数据，那么你需要定期编译abtool，不过我们大部分情况下并不关心这部分数据。
+
+#### 运行测试
+
+当你不知道用abtool做什么的时候，建议你跑一下`dump`命令，如下
+
+```
+abtool dump doc/resources/android/quickstart.ab
+```
