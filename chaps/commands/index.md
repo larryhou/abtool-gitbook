@@ -102,7 +102,7 @@ $ abtool savefbx --help
   -r  --axis-rotate-enabled  rotate model 90 degrees by axis-X counter-clockwise [FLAG]
   -o  --output      *.fbx output path [OPTIONAL](default=__fbx)
   -w  --rewritable  rewrite local file if it exists [FLAG]
-  -s  --skeleton-enabled  include skeleton info in exporation [FLAG]
+  -s  --skeleton-enabled  include skeleton info in *.fbx [FLAG]
 ```
 
 * `[FLAG]`表示当前参数为功能开关并且参数没有参数值

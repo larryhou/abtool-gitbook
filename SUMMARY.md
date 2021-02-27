@@ -33,6 +33,7 @@
     * [cmpmono](chaps/commands/cmpmono.md)
     * [external](chaps/commands/external.md)
     * [cmpxtl](chaps/commands/cmpxtl.md)
+    * [rename](chaps/commands/rename.md)
     * [rmtree](chaps/commands/rmtree.md)
     * [lua](chaps/commands/lua.md)
     * [edit](chaps/commands/edit.md)
