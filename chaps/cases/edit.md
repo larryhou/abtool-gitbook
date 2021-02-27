@@ -145,13 +145,13 @@ find . -iname '*.god' | xargs abtool list -r
 通过关键字`Small_Goblin_01`搜索，发现文件名为`artresource_environment_scene_logicmesh_small_checkerboard.god`的ab可能是我们要找的目标。
 ![](edit/findab.png)
 
-但是还没办法确定，所以可以先把资源反编译出来确认下，这里使用`savetex`保存ab里面的贴图，并用`textool`转码贴图文件，然后可以很容易发现，下面这两张贴图就是大厅的棋盘用的。
+但现在还不是特别确定，所以可以先把资源反编译出来确认下，这里使用`savetex`保存ab里面的贴图，并用`textool`转码贴图文件，然后可以很容易发现，下面这两张贴图就是大厅的棋盘用的。
 
-棋盘下半部分
+棋盘树干以及底座的贴图
 
 ![](edit/Looby_Goblin_Checkerboard_01.png)
 
-棋盘的树叶部分
+棋盘的树叶部分贴图
 
 ![](edit/Looby_Goblin_Checkerboard_02.png)
 
