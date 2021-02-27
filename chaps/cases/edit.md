@@ -26,7 +26,7 @@ abtool saveta dataconfig.god
 protoc --decode_raw < __textassets/dataconfig_chess_board_skin_conf.bytes | pbdecode
 ```
 
-其中`pbdecode`是笔者写的一个小工具，可以把protoc打印出来的八进制编码转成UTF-8编码，主要方便查看配置中文信息，可以复制以下C++代码自行编译。
+其中`pbdecode`是笔者写的一个小工具，可以把protoc打印出来的八进制编码转成UTF-8编码，主要方便查看中文配置信息，可以复制以下C++代码自行编译。
 
 ```c++
 #include <assert.h>
