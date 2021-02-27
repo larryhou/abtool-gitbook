@@ -7,7 +7,7 @@
 笔者的目标是要把中间那个森林棋盘的Shader去掉，期望棋盘显示为紫色效果。
 
 
-首先在ab资源通过文件名`dataconfig.god`，看起像来是配置文件，通过`list`命令发里面都是二进制配置。
+首先在ab资源里面找到文件`dataconfig.god`，看起像来是配置文件，通过`list`命令发里面都是二进制配置。
 
 ```
 abtool list dataconfig.god
