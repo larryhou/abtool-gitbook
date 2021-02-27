@@ -109,6 +109,8 @@ $ abtool savefbx --help
 * `[OPTIONAL]`表示当前参数为可选参数并有默认值，例如`default=__fbx`
 * 其他类型的参数为必选参数，也即是参数名和参数值必须设置正确，否则会运行崩溃
 
+在本章节只会对一些常用的命令做详细的说明，但不代表abtool只有这些内置命令。
+
 [^1]: https://misc.flogisoft.com/bash/tip_colors_and_formatting
 
 
