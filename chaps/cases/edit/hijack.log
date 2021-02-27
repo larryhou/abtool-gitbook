@@ -1,0 +1,479 @@
+[0] Android/artresource_environment_scene_logicmesh_small_checkerboard.god
+<Material:21> id=7397932659350227505
+    m_Name:string = Looby_Goblin_Checkerboard_01
+    m_Shader:PPtr<Shader>
+        m_FileID = 1
+        m_PathID = -772593627458890460
+    m_ShaderKeywords:string = _ZZQ_S_EMISSION_OFF
+    m_LightmapFlags:uint32_t = 4
+    m_EnableInstancingVariants:bool = 0
+    m_DoubleSidedGI:bool = 0
+    m_CustomRenderQueue:int32_t = -1
+    stringTagMap:map<string,string>
+    disabledShaderPasses:vector<string>
+    m_SavedProperties:UnityPropertySheet
+        m_TexEnvs:map<string,UnityTexEnv>
+            first:string = _MainTex
+            second:UnityTexEnv
+                m_Texture:PPtr<Texture>
+                    m_FileID = 0
+                    m_PathID = 1508698989686522762
+                m_Scale:Vector2f
+                    x:float = 1
+                    y:float = 1
+                m_Offset:Vector2f
+                    x:float = 0
+                    y:float = 0
+        m_Floats:map<string,float>
+            first:string = #Enum#_ZZQ_S_EMISSION_OFF#_ZZQ_S_EMISSION_CONST#_ZZQ_S_EMISSION_SIN
+            second:float = 0
+            first:string = #Group#ANIM_ENABLE
+            second:float = 1
+            first:string = #Group#Feature
+            second:float = 1
+            first:string = #Group#Glow
+            second:float = 0
+            first:string = #Group#Main
+            second:float = 1
+            first:string = #Toggle#ANIM_ENABLE
+            second:float = 0
+            first:string = #Toggle#CAUSTICS
+            second:float = 0
+            first:string = #Toggle#CLOUDS
+            second:float = 0
+            first:string = #Toggle#_ZZQ_S_NOFOG_ON
+            second:float = 0
+            first:string = _BumpScale
+            second:float = 1
+            first:string = _Cutoff
+            second:float = 0.5
+            first:string = _DetailNormalMapScale
+            second:float = 1
+            first:string = _DstBlend
+            second:float = 0
+            first:string = _Flow_Speed
+            second:float = 0.5
+            first:string = _GlossMapScale
+            second:float = 1
+            first:string = _Glossiness
+            second:float = 0
+            first:string = _GlossyReflections
+            second:float = 1
+            first:string = _Intensity
+            second:float = 0
+            first:string = _Metallic
+            second:float = 0
+            first:string = _Mode
+            second:float = 0
+            first:string = _OcclusionStrength
+            second:float = 1
+            first:string = _Parallax
+            second:float = 0.02
+            first:string = _Rigidness
+            second:float = 1
+            first:string = _SmoothnessTextureChannel
+            second:float = 0
+            first:string = _SpecularHighlights
+            second:float = 1
+            first:string = _Speed
+            second:float = 0
+            first:string = _SrcBlend
+            second:float = 1
+            first:string = _Toggle_Caustics
+            second:float = 0
+            first:string = _UVSec
+            second:float = 0
+            first:string = _ZWrite
+            second:float = 1
+            first:string = _ZZQ_S_Emission
+            second:float = 0
+            first:string = _ZZQ_S_NoFog
+            second:float = 0
+        m_Colors:map<string,ColorRGBAf>
+            first:string = _Color
+            second:ColorRGBAf
+                r:float = 0.588
+                g:float = 0.588
+                b:float = 0.588
+                a:float = 1
+            first:string = _EmissionColor
+            second:ColorRGBAf
+                r:float = 0
+                g:float = 0
+                b:float = 0
+                a:float = 0
+            first:string = _Emission_Col
+            second:ColorRGBAf
+                r:float = 1
+                g:float = 1
+                b:float = 1
+                a:float = 1
+            first:string = _Emission_Params
+            second:ColorRGBAf
+                r:float = 0
+                g:float = 1
+                b:float = 5
+                a:float = 1
+            first:string = _Flow_Col
+            second:ColorRGBAf
+                r:float = 1
+                g:float = 1
+                b:float = 1
+                a:float = 1
+
+<Material:21> id=7397932659350227505
+    m_Name:string = Looby_Goblin_Checkerboard_01
+    m_Shader:PPtr<Shader>
+        m_FileID = 0
+        m_PathID = 0
+    m_ShaderKeywords:string = _ZZQ_S_EMISSION_OFF
+    m_LightmapFlags:uint32_t = 4
+    m_EnableInstancingVariants:bool = 0
+    m_DoubleSidedGI:bool = 0
+    m_CustomRenderQueue:int32_t = -1
+    stringTagMap:map<string,string>
+    disabledShaderPasses:vector<string>
+    m_SavedProperties:UnityPropertySheet
+        m_TexEnvs:map<string,UnityTexEnv>
+            first:string = _MainTex
+            second:UnityTexEnv
+                m_Texture:PPtr<Texture>
+                    m_FileID = 0
+                    m_PathID = 1508698989686522762
+                m_Scale:Vector2f
+                    x:float = 1
+                    y:float = 1
+                m_Offset:Vector2f
+                    x:float = 0
+                    y:float = 0
+        m_Floats:map<string,float>
+            first:string = #Enum#_ZZQ_S_EMISSION_OFF#_ZZQ_S_EMISSION_CONST#_ZZQ_S_EMISSION_SIN
+            second:float = 0
+            first:string = #Group#ANIM_ENABLE
+            second:float = 1
+            first:string = #Group#Feature
+            second:float = 1
+            first:string = #Group#Glow
+            second:float = 0
+            first:string = #Group#Main
+            second:float = 1
+            first:string = #Toggle#ANIM_ENABLE
+            second:float = 0
+            first:string = #Toggle#CAUSTICS
+            second:float = 0
+            first:string = #Toggle#CLOUDS
+            second:float = 0
+            first:string = #Toggle#_ZZQ_S_NOFOG_ON
+            second:float = 0
+            first:string = _BumpScale
+            second:float = 1
+            first:string = _Cutoff
+            second:float = 0.5
+            first:string = _DetailNormalMapScale
+            second:float = 1
+            first:string = _DstBlend
+            second:float = 0
+            first:string = _Flow_Speed
+            second:float = 0.5
+            first:string = _GlossMapScale
+            second:float = 1
+            first:string = _Glossiness
+            second:float = 0
+            first:string = _GlossyReflections
+            second:float = 1
+            first:string = _Intensity
+            second:float = 0
+            first:string = _Metallic
+            second:float = 0
+            first:string = _Mode
+            second:float = 0
+            first:string = _OcclusionStrength
+            second:float = 1
+            first:string = _Parallax
+            second:float = 0.02
+            first:string = _Rigidness
+            second:float = 1
+            first:string = _SmoothnessTextureChannel
+            second:float = 0
+            first:string = _SpecularHighlights
+            second:float = 1
+            first:string = _Speed
+            second:float = 0
+            first:string = _SrcBlend
+            second:float = 1
+            first:string = _Toggle_Caustics
+            second:float = 0
+            first:string = _UVSec
+            second:float = 0
+            first:string = _ZWrite
+            second:float = 1
+            first:string = _ZZQ_S_Emission
+            second:float = 0
+            first:string = _ZZQ_S_NoFog
+            second:float = 0
+        m_Colors:map<string,ColorRGBAf>
+            first:string = _Color
+            second:ColorRGBAf
+                r:float = 0.588
+                g:float = 0.588
+                b:float = 0.588
+                a:float = 1
+            first:string = _EmissionColor
+            second:ColorRGBAf
+                r:float = 0
+                g:float = 0
+                b:float = 0
+                a:float = 0
+            first:string = _Emission_Col
+            second:ColorRGBAf
+                r:float = 1
+                g:float = 1
+                b:float = 1
+                a:float = 1
+            first:string = _Emission_Params
+            second:ColorRGBAf
+                r:float = 0
+                g:float = 1
+                b:float = 5
+                a:float = 1
+            first:string = _Flow_Col
+            second:ColorRGBAf
+                r:float = 1
+                g:float = 1
+                b:float = 1
+                a:float = 1
+
+-9060459312878698151 offset=(0,0) size=32888 
+-8981731155627725991 offset=(32888,32888) size=31 
+-8967952397962153136 offset=(32920,32920) size=68 
+-8846518511573218646 offset=(32992,32992) size=2056 
+-8753201279840290935 offset=(35048,35048) size=131204 
+-8728255678924647163 offset=(166256,166256) size=132 
+-8715879223674329682 offset=(166392,166392) size=984 
+-8499440941201471069 offset=(167376,167376) size=59 
+-8351509888078499760 offset=(167440,167440) size=68 
+-8261510583770388591 offset=(167512,167512) size=68 
+-8204244408006049036 offset=(167584,167584) size=103608 
+-8075611708629793109 offset=(271192,271192) size=68 
+-8047355799371515207 offset=(271264,271264) size=1024 
+-7958052659556291389 offset=(272288,272288) size=1040 
+-7912952651236774581 offset=(273328,273328) size=128 
+-7723009470637181063 offset=(273456,273456) size=1064 
+-7720196250547212530 offset=(274520,274520) size=32888 
+-7686833747271102765 offset=(307408,307408) size=39 
+-7626673083816829291 offset=(307448,307448) size=2156 
+-7624970579657709750 offset=(309608,309608) size=74916 
+-7563882359324949159 offset=(384528,384528) size=68 
+-7540436979560717559 offset=(384600,384600) size=39 
+-7408829566195796616 offset=(384640,384640) size=59 
+-7188284363251313665 offset=(384704,384704) size=71 
+-7142454562947697351 offset=(384776,384776) size=132 
+-7095834079733869145 offset=(384912,384912) size=24 
+-6960762121289056909 offset=(384936,384936) size=24 
+-6935371315125997627 offset=(384960,384960) size=79 
+-6762151306068832936 offset=(385040,385040) size=35 
+-6688254362802037532 offset=(385080,385080) size=188 
+-6632908872100820574 offset=(385272,385272) size=56 
+-6629179126486542172 offset=(385328,385328) size=24 
+-6253610914624607641 offset=(385352,385352) size=170708 
+-6243994729071932848 offset=(556064,556064) size=68 
+-5836373651561555980 offset=(556136,556136) size=68 
+-5759310647701479409 offset=(556208,556208) size=131196 
+-5626184494414358351 offset=(687408,687408) size=68 
+-5453299197072231252 offset=(687480,687480) size=68 
+-5424465682243225341 offset=(687552,687552) size=131200 
+-5391926031261784083 offset=(818752,818752) size=51 
+-5325256753782062768 offset=(818808,818808) size=24 
+-5307815669454097746 offset=(818832,818832) size=123760 
+-5200215247668075545 offset=(942592,942592) size=262264 
+-5131930966090846121 offset=(1204856,1204856) size=5288 
+-5025712906770107865 offset=(1210144,1210144) size=24 
+-5009062160304784143 offset=(1210168,1210168) size=1036 
+-4896265928143409793 offset=(1211208,1211208) size=132 
+-4685029421720653949 offset=(1211344,1211344) size=156 
+-4664351426017139698 offset=(1211504,1211504) size=262268 
+-4641713409107371021 offset=(1473776,1473776) size=56 
+-4598624238182533145 offset=(1473832,1473832) size=3872 
+-4597569486393494412 offset=(1477704,1477704) size=876 
+-4436437082559576156 offset=(1478584,1478584) size=131192 
+-4409720520709012077 offset=(1609776,1609776) size=68 
+-4340832501148277245 offset=(1609848,1609848) size=31 
+-4131047526241059403 offset=(1609880,1609880) size=2400 
+-4099600109795468549 offset=(1612280,1612280) size=131200 
+-4096746361627059498 offset=(1743480,1743480) size=35 
+-4090105570898512842 offset=(1743520,1743520) size=1040 
+-4059634807393892649 offset=(1744560,1744560) size=24 
+-4003347493666321660 offset=(1744584,1744584) size=1068 
+-3972612917093910896 offset=(1745656,1745656) size=68 
+-3921066631065208898 offset=(1745728,1745728) size=25812 
+-3590271093235529293 offset=(1771544,1771544) size=24 
+-3433678106686921681 offset=(1771568,1771568) size=168 
+-3140822940907389585 offset=(1771736,1771736) size=188 
+-2939678575773478622 offset=(1771928,1771928) size=131208 
+-2913112510870666718 offset=(1903136,1903136) size=68 
+-2894041409448365904 offset=(1903208,1903208) size=5288 
+-2877168509819661596 offset=(1908496,1908496) size=1044 
+-2839914228053048549 offset=(1909544,1909544) size=144 
+-2661002588071941940 offset=(1909688,1909688) size=59816 
+-2413791170544425349 offset=(1969504,1969504) size=68 
+-2406724288863912111 offset=(1969576,1969576) size=68 
+-2274689914492339731 offset=(1969648,1969648) size=131192 
+-2133368563806115046 offset=(2100840,2100840) size=92 
+-2128647828569375101 offset=(2100936,2100936) size=31 
+-2038843283149311486 offset=(2100968,2100968) size=24 
+-1987367673314115441 offset=(2100992,2100992) size=123804 
+-1979993991217573897 offset=(2224800,2224800) size=39 
+-1898850107182917619 offset=(2224840,2224840) size=41096 
+-1846619239729474507 offset=(2265936,2265936) size=67 
+-1842390318648859198 offset=(2266008,2266008) size=132 
+-1671159242674800032 offset=(2266144,2266144) size=132 
+-1476323722407454295 offset=(2266280,2266280) size=68 
+-1466957682935978974 offset=(2266352,2266352) size=262268 
+-1445477666719676409 offset=(2528624,2528624) size=68 
+-1444210858861266888 offset=(2528696,2528696) size=68 
+-1415030057378256139 offset=(2528768,2528768) size=131200 
+-1370358532060236070 offset=(2659968,2659968) size=1020 
+-1274278141037249145 offset=(2660992,2660992) size=262268 
+-1245856618011917698 offset=(2923264,2923264) size=68 
+-1137033372453696955 offset=(2923336,2923336) size=68 
+-1090891055614102373 offset=(2923408,2923408) size=59 
+-1060789715537430581 offset=(2923472,2923472) size=63 
+-974909055039112058 offset=(2923536,2923536) size=68 
+-839997093801853906 offset=(2923608,2923608) size=1040 
+-815900752465560742 offset=(2924648,2924648) size=2292 
+-686546735378397814 offset=(2926944,2926944) size=67 
+-670077605132292878 offset=(2927016,2927016) size=68 
+-607989400175862176 offset=(2927088,2927088) size=39 
+-489097760668045304 offset=(2927128,2927128) size=97512 
+-423581962247902049 offset=(3024640,3024640) size=131200 
+-327982762363811443 offset=(3155840,3155840) size=74468 
+-241385514708998563 offset=(3230312,3230312) size=24 
+-201596490988006930 offset=(3230336,3230336) size=31 
+-98406902762633244 offset=(3230368,3230368) size=24 
+-86863212483868072 offset=(3230392,3230392) size=67 
+-41153826376872496 offset=(3230464,3230464) size=132 
+-26047253391772039 offset=(3230600,3230600) size=68 
+     1 offset=(3230672,3230672) size=18636 
+176211266878364470 offset=(3249312,3249312) size=56 
+196366045460674017 offset=(3249368,3249368) size=132 
+261413876984890734 offset=(3249504,3249504) size=241108 
+306189654587346697 offset=(3490616,3490616) size=140196 
+320019294195072475 offset=(3630816,3630816) size=71 
+405788281077820734 offset=(3630888,3630888) size=262268 
+420999992905649450 offset=(3893160,3893160) size=68 
+465913209830004892 offset=(3893232,3893232) size=59 
+702366205733772101 offset=(3893296,3893296) size=68 
+884179161077277802 offset=(3893368,3893368) size=68 
+888385446037698712 offset=(3893440,3893440) size=135740 
+916338815265669213 offset=(4029184,4029184) size=131192 
+976404883286905271 offset=(4160376,4160376) size=68 
+1043072703833886136 offset=(4160448,4160448) size=71 
+1088013320509534823 offset=(4160520,4160520) size=63 
+1200835732616834937 offset=(4160584,4160584) size=1044 
+1222599509208067623 offset=(4161632,4161632) size=68 
+1250090912502345280 offset=(4161704,4161704) size=68 
+1396463650052231460 offset=(4161776,4161776) size=904 
+1408818585729717867 offset=(4162680,4162680) size=3092 
+1508698989686522762 offset=(4165776,4165776) size=262264 
+1529255472474312354 offset=(4428040,4428040) size=1064 
+1759317938978711341 offset=(4429104,4429104) size=56 
+1887006644142113343 offset=(4429160,4429160) size=2384 
+2062918721111255359 offset=(4431544,4431544) size=59 
+2080714167570962733 offset=(4431608,4431608) size=1044 
+2083733182235952469 offset=(4432656,4432656) size=32888 
+2114592832912938152 offset=(4465544,4465544) size=132 
+2131041872717640786 offset=(4465680,4465680) size=188 
+2234312087846703468 offset=(4465872,4465872) size=8720 
+2250201723019734367 offset=(4474592,4474592) size=132 
+2326586284336138329 offset=(4474728,4474728) size=131196 
+2675402511404444976 offset=(4605928,4605928) size=31 
+2822458002034620591 offset=(4605960,4605960) size=2628 
+3148797700184563944 offset=(4608592,4608592) size=71 
+3221935104758034171 offset=(4608664,4608664) size=132 
+3360221746382203417 offset=(4608800,4608800) size=876 
+3376542784160277249 offset=(4609680,4609680) size=28796 
+3381109201657269438 offset=(4638480,4638480) size=71 
+3412336973556112270 offset=(4638552,4638552) size=188 
+3518056749818505758 offset=(4638744,4638744) size=188 
+3519920866099984749 offset=(4638936,4638936) size=1016 
+3526261387283105675 offset=(4639952,4639952) size=1016 
+3541414612761467466 offset=(4640968,4640968) size=68 
+3608568463149494257 offset=(4641040,4641040) size=51 
+3618951439424964333 offset=(4641096,4641096) size=24 
+3863572335252893955 offset=(4641120,4641120) size=35 
+4251508832704774914 offset=(4641160,4641160) size=47664 
+4303836258745652682 offset=(4688824,4688824) size=68 
+4320760645205813691 offset=(4688896,4688896) size=71 
+4355523173971230327 offset=(4688968,4688968) size=68 
+4398330766379358072 offset=(4689040,4689040) size=68 
+4465598036824753880 offset=(4689112,4689112) size=31 
+4526519808310907706 offset=(4689144,4689144) size=262264 
+4535657565495245446 offset=(4951408,4951408) size=131196 
+4581630468091253984 offset=(5082608,5082608) size=68 
+4624220741882546794 offset=(5082680,5082680) size=1012 
+4694371562373070188 offset=(5083696,5083696) size=81768 
+4793009305829756439 offset=(5165464,5165464) size=67 
+4961930442702172281 offset=(5165536,5165536) size=67 
+5052186195603211611 offset=(5165608,5165608) size=131192 
+5142181139380086608 offset=(5296800,5296800) size=31 
+5399364907565314741 offset=(5296832,5296832) size=463992 
+5462779071533459813 offset=(5760824,5760824) size=128 
+5582902914275229284 offset=(5760952,5760952) size=68 
+5618473557374348310 offset=(5761024,5761024) size=188 
+5841386441718798533 offset=(5761216,5761216) size=24 
+5963962003974187584 offset=(5761240,5761240) size=83324 
+5984257882397640705 offset=(5844568,5844568) size=56 
+6088165434827064566 offset=(5844624,5844624) size=2628 
+6289077311499412509 offset=(5847256,5847256) size=131196 
+6350510329076793873 offset=(5978456,5978456) size=1016 
+6423991997888590069 offset=(5979472,5979472) size=2752 
+6432790318814207206 offset=(5982224,5982224) size=71 
+6459244263156796687 offset=(5982296,5982296) size=1164 
+6471048148893677066 offset=(5983464,5983464) size=31 
+6614772368925636519 offset=(5983496,5983496) size=24 
+6629986472116343722 offset=(5983520,5983520) size=936 
+6643645270529243400 offset=(5984456,5984456) size=39 
+6651832478985418493 offset=(5984496,5984496) size=56 
+6709972672413960115 offset=(5984552,5984552) size=24 
+6827737838510787065 offset=(5984576,5984576) size=24 
+6910648007705263769 offset=(5984600,5984600) size=79 
+7002363103227542080 offset=(5984680,5984680) size=68 
+7015712188372927964 offset=(5984752,5984752) size=132 
+7166107055350246390 offset=(5984888,5984888) size=68 
+7299249112755652735 offset=(5984960,5984960) size=71 
+7397932659350227505 offset=(5985032,5985032) size=1088 
+7530927200998202761 offset=(5986120,5986120) size=131192 
+7590780492786982126 offset=(6117312,6117312) size=1012 
+7603611601241371947 offset=(6118328,6118328) size=59 
+7679295911449427264 offset=(6118392,6118392) size=68 
+7703825253653849564 offset=(6118464,6118464) size=39 
+7710129479545721906 offset=(6118504,6118504) size=68 
+7819668820690234154 offset=(6118576,6118576) size=2168 
+8028800473098988706 offset=(6120744,6120744) size=31 
+8051114253896785916 offset=(6120776,6120776) size=75 
+8135568921510042128 offset=(6120856,6120856) size=68 
+8155954623935796570 offset=(6120928,6120928) size=68 
+8156291281393084802 offset=(6121000,6121000) size=343884 
+8192008035760586625 offset=(6464888,6464888) size=132 
+8240669295684207002 offset=(6465024,6465024) size=132 
+8424672479283246905 offset=(6465160,6465160) size=183512 
+8504488164557734997 offset=(6648672,6648672) size=24 
+8711197821023412143 offset=(6648696,6648696) size=120736 
+8725827029522537470 offset=(6769432,6769432) size=67 
+8806836127595314983 offset=(6769504,6769504) size=104 
+8827163828425444581 offset=(6769608,6769608) size=132 
+8877879398250205405 offset=(6769744,6769744) size=31 
+8897884329953414156 offset=(6769776,6769776) size=24 
+8916787491521440027 offset=(6769800,6769800) size=39 
+8979434984856966149 offset=(6769840,6769840) size=262268 
+9023061127269163573 offset=(7032112,7032112) size=68 
+9060900240027984001 offset=(7032184,7032184) size=776 
+9116834689692415733 offset=(7032960,7032960) size=68 
+9131844416235031120 offset=(7033032,7033032) size=3040 
+SerializedFileHeader
+    metadata_size = 45481
+    file_size = 7081576
+    version = 17
+    data_offset = 45504
+    endianess = 0
+    reserved = 000000
