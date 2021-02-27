@@ -142,7 +142,7 @@ int main(int argc, const char * argv[])
 find . -iname '*.god' | xargs abtool list -r
 ```
 
-通过关键字`Small_Goblin_01`搜索，发现文件名为`artresource_environment_scene_logicmesh_small_checkerboard.god`的ab可能是我们要找的。
+通过关键字`Small_Goblin_01`搜索，发现文件名为`artresource_environment_scene_logicmesh_small_checkerboard.god`的ab可能是我们要找的目标。
 ![](edit/findab.png)
 
 但是还没办法确定，所以可以先把资源反编译出来确认下，这里使用`savetex`保存ab里面的贴图，并用`textool`转码贴图文件，然后可以很容易发现，下面这两张贴图就是大厅的棋盘用的。
