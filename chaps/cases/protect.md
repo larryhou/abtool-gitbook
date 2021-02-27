@@ -25,6 +25,22 @@ DisableWriteTypeTree = 8,
 
 由于abtool绝大部分功能都基于TypeTree，那是不是关闭TypeTree资源就安全了？没那么简单！TypeTree是由Unity生成，换句话说，如果拿到相同版本的Unity也是可以轻易获取TypeTree的，在这种情况下，关掉TypeTree的意义仅仅是防止了破解`MonoBehaviour`，防护等级是很弱的！换句话说，如果你用了Unity公开发行的版本（标准版），那么你的的游戏资产完全是在裸奔的！
 
+比如王牌战士游戏虽然关闭了资源的TypeTree，但是他们用了标准版的Unity`2017.4.26f1`
+![](protect/hex.png)
+
+笔者从官网下载了一个相同的安装包，导入资源包`QuickStart.unitypackage`快速编译出来`abtool`，同样可以逆向他们的游戏资产。
+
+贴图资源
+![](protect/savetex.png)
+
+模型资源
+![](protect/savefbx.png)
+
+模型+贴图渲染
+![](protect/model.png)
+
+太恐怖了！如果你的项目选择使用标准版Unity，那么资源被破解几乎是必然的！要想保护游戏资产，那你的项目最好有引擎源码，并从以下几个方向做一些优化，不然是无解的。
+
 #### 修改关键资源序列化
 
 如果你的项目有源码，那么可以把一些关键资源的序列化字段改一下。比如`Texture2D`这个资源类型，它的数据结构大致如下
