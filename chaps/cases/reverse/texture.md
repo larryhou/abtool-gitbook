@@ -49,6 +49,7 @@ def main():
             mode = 'RGB'
         elif texture_format.startswith('etc2_'):
             image = decompress_etc(fp.read(), texture_size[0], texture_size[1], 3 if texture_format.startswith('etc2_rgba') else 1)
+            if not texture_format.startswith('etc2_rgba'): mode = 'RGB'
         elif texture_format.startswith('astc_rgb'):
             block_size = [int(x) for x in texture_format.split('_')[-1].split('x')]
             image = decompress_astc(fp.read(), texture_size[0], texture_size[1], block_size[0], block_size[1], False)
