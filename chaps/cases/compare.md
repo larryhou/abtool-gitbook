@@ -49,7 +49,7 @@ struct AssetBundle {
 
 #### 动画资产浮点数序列化不稳定
 
-`AnimationClip`动画资产里面Hermite样条曲线函数很容易产生不稳定的结果，主要表现为往极大或者极小值方向变化。
+`AnimationClip`动画资产里面的Hermite样条曲线很容易产生不稳定的结果，主要表现为往极大或者极小值方向变化。
 
 ```c++
 struct StreamedHermiteClip {
@@ -68,8 +68,26 @@ struct StreamedHermiteClip {
 `MonoBehaviour`脚本在序列化的时候会把成员变量按照一定规则算出一个128位的hash值，如果修改了脚本变量那么理论上是不能够热更的，否则运行时将无法对资源进行反序列化和对象加载，一般只有商店版本发布的时候才发布修改后的脚本。
 ![](compare/typetree.png)
 
-但是程序版本发布的时候，一般还会有另外一个问题
+虽然程序版本发布的时候可以修改`MonoBehaviour`脚本，但是这样一般还会带来有另外一个问题：由于`MonoBehaviour`的`Hash128`以及TypeTree会序列化到资源里面，所以修改`MonoBehaviour`会导致最终的ab资源变更，并且难以发现。笔者基于这种情况，开发了`mono`命令，可以扫描脚本在ab文件里面的分布情况，简单说可以查看修改某个脚本会影响多少资源的变更。
+
+```
+find . -iname '*.pak' | xargs abtool mono
+```
+`mono`命令执行后会把扫描到的数据缓存下来，下次可以直接运行`abtool mono`而不用再次扫描ab资源。
+
 ![](compare/mono.png)
 
-![](compare/cmphash.png)
+从扫描结果来看，命名空间`GameEngine`里面的`AssetRef`类被174M的ab资源引用，也就是说，修改了`AssetRef`脚本会导致174M的ab资源发生变化。
+
+在大版本升级过程中我们希望有尽可能多的资源可以复用避免重复下载，那么可以结合`cmpmono`来对比大版本升级前后有哪些影响ab资源的`MonoBehaviour`脚本发生了修改。具体做法如下：
+1. 分别在需要对比的ab资源目录运行`mono`命令，这样会生成对应的扫描数据文件`monoscripts.ms`
+2. 运行`cmpmono -s [source.ms] -d [destination.ms]`输出对比结果
+
+```
+abtool cmpmono -s iMSDK_CN_Android_108_AssetBundle/monoscripts.ms -d iMSDK_CN_Android_145_AssetBundle/monoscripts.ms | grep ^M
+```
+
+![](compare/cmpmono.png)
+
+这样可以很清晰地看到有多少资源在大版本升级后因为修改`MonoBehaviour`脚本而发生变化，通过这个列表可以作相应资源优化。
 
