@@ -150,7 +150,7 @@ find . -iname '*.god' | xargs abtool list -r
 
 但现在还不是特别确定，所以可以先把资源反编译出来确认下，这里使用`savetex`保存ab里面的贴图，并用`textool`转码贴图文件，然后可以很容易发现，下面这两张贴图可以确认是大厅棋盘使用的。
 
-棋盘树干以及底座的贴图，从这里看出来棋盘的光照是假光照，烘焙到贴图里面了
+棋盘树干以及底座的贴图，从这里看出来棋盘的光照是假光照，被烘焙到贴图里面了，如下
 
 ![](edit/Looby_Goblin_Checkerboard_01.png)
 
@@ -158,7 +158,7 @@ find . -iname '*.god' | xargs abtool list -r
 
 ![](edit/Looby_Goblin_Checkerboard_02.png)
 
-接下来我们选择与贴图同名的`looby_goblin_checkerboard_01.tga`材质球`looby_goblin_checkerboard_01.mat`作为切入点，它的资源ID为`7397932659350227505`，剩下的工作就交给`edit`命令来实现了。
+接下来我们选择与贴图`looby_goblin_checkerboard_01.tga`同名的材质球`looby_goblin_checkerboard_01.mat`作为切入点，它的资源ID为`7397932659350227505`，剩下的工作就交给`edit`命令来实现了。
 
 ```
 abtool edit artresource_environment_scene_logicmesh_small_checkerboard.god
