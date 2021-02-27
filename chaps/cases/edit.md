@@ -2,7 +2,7 @@
 ---
 
 以下演示继续用战歌竞技场的资源，下面是游戏大厅的界面。
-![](edit/normal.png)
+![](edit/normal.jpg)
 
 笔者的目标是要把中间那个森林棋盘的Shader去掉，期望棋盘显示为紫色效果。
 
@@ -176,7 +176,7 @@ save
 
 见证奇迹时刻
 
-![](edit/hijack.png)
+![](edit/hijack.jpg)
 
 上面`edit`模式需要手动码字，如果需要多次运行的时候就会显得不太方便，那么可以在当前cd目录写一个lua脚本`abtool.lua`。
 
