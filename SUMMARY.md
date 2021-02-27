@@ -27,7 +27,7 @@
     * [savetex](chaps/commands/savetex.md)
     * [saveta](chaps/commands/saveta.md)
     * [saveobj](chaps/commands/saveobj.md)
-    * [objref](chaps/commands/objref.md)
+    * [getref](chaps/commands/getref.md)
     * [mono](chaps/commands/mono.md)
     * [cmpref](chaps/commands/cmpref.md)
     * [cmpxtl](chaps/commands/cmpxtl.md)
