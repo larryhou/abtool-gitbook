@@ -31,7 +31,7 @@
     * [mono](chaps/commands/mono.md)
     * [cmpref](chaps/commands/cmpref.md)
     * [cmpxtl](chaps/commands/cmpxtl.md)
-    * [cmphash](chaps/commands/cmphash.md)
+    * [cmpmono](chaps/commands/cmpmono.md)
     * [external](chaps/commands/external.md)
     * [rmtree](chaps/commands/rmtree.md)
     * [lua](chaps/commands/lua.md)
