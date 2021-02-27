@@ -113,7 +113,7 @@ int main(int argc, const char * argv[])
 
 ![](edit/chess.png)
 
-那么我们从刚刚解开的配置里面确实找到了相关数据
+同时我们从刚刚解开的配置里面确实找到了相关数据
 ```
 1 {
   1: 18
@@ -148,9 +148,9 @@ find . -iname '*.god' | xargs abtool list -r
 通过关键字`Small_Goblin_01`搜索，发现文件名为`artresource_environment_scene_logicmesh_small_checkerboard.god`的ab可能是我们要找的目标。
 ![](edit/findab.png)
 
-但现在还不是特别确定，所以可以先把资源反编译出来确认下，这里使用`savetex`保存ab里面的贴图，并用`textool`转码贴图文件，然后可以很容易发现，下面这两张贴图就是大厅的棋盘用的。
+但现在还不是特别确定，所以可以先把资源反编译出来确认下，这里使用`savetex`保存ab里面的贴图，并用`textool`转码贴图文件，然后可以很容易发现，下面这两张贴图可以确认是大厅棋盘使用的。
 
-棋盘树干以及底座的贴图
+棋盘树干以及底座的贴图，从这里看出来棋盘的光照是假光照，烘焙到贴图里面了
 
 ![](edit/Looby_Goblin_Checkerboard_01.png)
 
@@ -213,6 +213,6 @@ abtool lua artresource_environment_scene_logicmesh_small_checkerboard.god
 
 最终在lua脚本指定的保存目录生成编辑后的ab文件。
 
-当然，这个演示的目的不是教大家hack别人的游戏，由于abtool的这个能力，我们可以在不用构建资源包的情况可以通过修改资源快速验证一些想法，比如测试发现资源bug，可以通过abtool快速修复验证，当然前提是你对abtool有一定的熟悉。
+当然，这个演示的目的不是教大家hack别人的游戏，由于abtool的这个能力，我们可以通过修改资源快速验证一些想法而不用构建资源包，比如测试发现资源bug，通过abtool快速修复验证，当然前提是你对abtool有一定的熟悉。
 
 
