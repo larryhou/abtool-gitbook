@@ -713,6 +713,66 @@
                                 
                                 <h1 id="savefbx">savefbx</h1>
 <hr>
+<h4 id="&#x7528;&#x9014;">&#x7528;&#x9014;</h4>
+<p><code>savefbx</code>&#x547D;&#x4EE4;&#x626B;&#x63CF;ab&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x6240;&#x6709;<code>Mesh</code>&#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#x5E76;&#x4FDD;&#x5B58;&#x4E3A;<code>*.fbx</code>&#x6587;&#x4EF6;&#xFF0C;&#x7528;<code>Mesh::m_Name</code>&#x4F5C;&#x4E3A;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x8BE5;&#x547D;&#x4EE4;&#x4ECE;<code>Mesh::m_CompressedMesh</code>&#x5B57;&#x6BB5;&#x63D0;&#x53D6;&#x6A21;&#x578B;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x5B57;&#x6BB5;&#x6CA1;&#x6709;&#x5305;&#x542B;&#x6709;&#x6548;&#x6A21;&#x578B;&#x6570;&#x636E;&#xFF0C;&#x6700;&#x7EC8;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x65E0;&#x6548;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">struct</span> Mesh: <span class="hljs-keyword">public</span> Object {
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> m_Name;  <span class="hljs-comment">// 1</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;SubMesh&gt; m_SubMeshes;  <span class="hljs-comment">// 2</span>
+    BlendShapeData m_Shapes;  <span class="hljs-comment">// 3</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;Matrix4x4f&gt; m_BindPose;  <span class="hljs-comment">// 4</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">uint32_t</span>&gt; m_BoneNameHashes;  <span class="hljs-comment">// 5</span>
+    <span class="hljs-keyword">uint32_t</span> m_RootBoneNameHash;  <span class="hljs-comment">// 6</span>
+    <span class="hljs-keyword">uint8_t</span> m_MeshCompression;  <span class="hljs-comment">// 7</span>
+    <span class="hljs-keyword">bool</span> m_IsReadable;  <span class="hljs-comment">// 8</span>
+    <span class="hljs-keyword">bool</span> m_KeepVertices;  <span class="hljs-comment">// 9</span>
+    <span class="hljs-keyword">bool</span> m_KeepIndices;  <span class="hljs-comment">// 10</span>
+    <span class="hljs-keyword">int32_t</span> m_IndexFormat;  <span class="hljs-comment">// 11</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">uint8_t</span>&gt; m_IndexBuffer;  <span class="hljs-comment">// 12</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;BoneWeights4&gt; m_Skin;  <span class="hljs-comment">// 13</span>
+    VertexData m_VertexData;  <span class="hljs-comment">// 14</span>
+    CompressedMesh m_CompressedMesh;  <span class="hljs-comment">// 15</span>
+    AABB m_LocalAABB;  <span class="hljs-comment">// 16</span>
+    <span class="hljs-keyword">int32_t</span> m_MeshUsageFlags;  <span class="hljs-comment">// 17</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">uint8_t</span>&gt; m_BakedConvexCollisionMesh;  <span class="hljs-comment">// 18</span>
+    <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">uint8_t</span>&gt; m_BakedTriangleCollisionMesh;  <span class="hljs-comment">// 19</span>
+};
+</code></pre>
+<h4 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:center">&#x7F29;&#x5199;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">--axis-rotate-enabled</td>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">&#x6CBF;X&#x8F74;&#x9006;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#x6A21;&#x578B;90&#xB0;&#x5F00;&#x5173;</td>
+</tr>
+<tr>
+<td style="text-align:left">--output</td>
+<td style="text-align:center">-o</td>
+<td style="text-align:left"><code>*.fbx</code>&#x6587;&#x4EF6;&#x8F93;&#x51FA;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#xFF1A;<code>__fbx</code></td>
+</tr>
+<tr>
+<td style="text-align:left">--rewritable</td>
+<td style="text-align:center">-w</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x8986;&#x76D6;&#x5F00;&#x5173;</td>
+</tr>
+<tr>
+<td style="text-align:left">--skeleton-enabled</td>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x9AA8;&#x9ABC;&#x8499;&#x76AE;&#x4FE1;&#x606F;&#x5F00;&#x5173;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h4>
+<pre><code>abtool savefbx Android/artresource_captainpbr_captain_201.god
+</code></pre><p><img src="savefbx/savefbx.png" alt=""></p>
+<p><img src="savefbx/sample.png" alt=""></p>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -757,7 +817,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"savefbx","level":"1.4.8","depth":2,"next":{"title":"savetex","level":"1.4.9","depth":2,"path":"chaps/commands/savetex.md","ref":"chaps/commands/savetex.md","articles":[]},"previous":{"title":"scantex","level":"1.4.7","depth":2,"path":"chaps/commands/scantex.md","ref":"chaps/commands/scantex.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"Unity开发的梦中情人❬abtool❭"},"file":{"path":"chaps/commands/savefbx.md","mtime":"2021-02-24T03:40:22.523Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-25T05:28:58.479Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"savefbx","level":"1.4.8","depth":2,"next":{"title":"savetex","level":"1.4.9","depth":2,"path":"chaps/commands/savetex.md","ref":"chaps/commands/savetex.md","articles":[]},"previous":{"title":"scantex","level":"1.4.7","depth":2,"path":"chaps/commands/scantex.md","ref":"chaps/commands/scantex.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"Unity开发的梦中情人❬abtool❭"},"file":{"path":"chaps/commands/savefbx.md","mtime":"2021-02-28T12:49:51.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-25T05:28:58.479Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
