@@ -3,7 +3,7 @@
 
 #### 用途
 
-`savetex`命令扫描ab文件里面包含贴图资源并识别非渲染高效(PVRTC/ASTC/ETC[2])的贴图，同时会把扫描结果缓存到当前目录的`textures.tex`文件。
+`scantex`命令扫描ab文件里面包含贴图资源并识别非渲染高效(PVRTC/ASTC/ETC[2])的贴图，同时会把扫描结果缓存到当前目录的`textures.tex`文件。
 
 #### 参数
 
