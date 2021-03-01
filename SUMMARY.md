@@ -34,7 +34,6 @@
     * [savextl](chaps/commands/savextl.md)
     * [cmpxtl](chaps/commands/cmpxtl.md)
     * [rename](chaps/commands/rename.md)
-    * [rmtree](chaps/commands/rmtree.md)
     * [edit](chaps/commands/edit.md)
     * [lua](chaps/commands/lua.md)
 

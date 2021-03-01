@@ -27,7 +27,7 @@ find doc/resources/android -iname '*.ab' | xargs abtool list -r
 
 ![](list/list-relay.png)
 
-接力模式下二次运行命令可以简化为，当前模式下会自动加载`assets.ls`文件，并打印相关信息。
+接力模式下二次运行命令可以简化为`abtool list -r`，当前模式下会自动加载`assets.ls`文件，并打印相关信息。
 
 ```
 abtool list -r
