@@ -35,8 +35,8 @@
     * [cmpxtl](chaps/commands/cmpxtl.md)
     * [rename](chaps/commands/rename.md)
     * [rmtree](chaps/commands/rmtree.md)
-    * [lua](chaps/commands/lua.md)
     * [edit](chaps/commands/edit.md)
+    * [lua](chaps/commands/lua.md)
 
 * [第四章 进阶开发](chaps/developments/index.md)
     * [项目架构](chaps/developments/project.md)
