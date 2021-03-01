@@ -3,7 +3,7 @@
 
 #### 用途
 
-`savefbx`命令扫描ab文件里面所有`Mesh`资源对象并保存为`*.fbx`文件，用`Mesh::m_Name`作为文件名。需要注意的是，该命令从`Mesh::m_CompressedMesh`字段提取模型数据，如果该字段没有包含有效模型数据，最终保存的文件可能无效。
+`savefbx`命令扫描ab文件里面所有`Mesh`资源对象并保存为`*.fbx`文件，用`Mesh::m_Name`作为文件名。需要注意的是，该命令从`Mesh::m_CompressedMesh`字段提取模型数据，如果该字段没有包含有效模型数据，最终保存的文件是无效的。
 
 ```c++
 struct Mesh: public Object {
@@ -28,6 +28,9 @@ struct Mesh: public Object {
     std::vector<uint8_t> m_BakedTriangleCollisionMesh;  // 19
 };
 ```
+
+模型压缩设置
+![](savefbx/compress.png)
 
 #### 参数
 
