@@ -486,12 +486,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.16" data-path="external.html">
+        <li class="chapter " data-level="1.4.16" data-path="savextl.html">
             
-                <a href="external.html">
+                <a href="savextl.html">
             
                     
-                    external
+                    savextl
             
                 </a>
             
@@ -713,6 +713,43 @@
                                 
                                 <h1 id="mono">mono</h1>
 <hr>
+<h4 id="&#x7528;&#x9014;">&#x7528;&#x9014;</h4>
+<p><code>mono</code>&#x547D;&#x4EE4;&#x626B;&#x63CF;<code>MonoBehaviour</code>&#x811A;&#x672C;&#x4F7F;&#x7528;&#x5206;&#x5E03;&#xFF0C;&#x5E76;&#x628A;&#x76F8;&#x5E94;&#x7684;&#x626B;&#x63CF;&#x7ED3;&#x679C;&#x7F13;&#x5B58;&#x5230;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x7684;<code>monoscripts.ms</code>&#x6587;&#x4EF6;&#x3002;</p>
+<h4 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:center">&#x7F29;&#x5199;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">--artifact</td>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">&#x7F13;&#x5B58;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x9ED8;&#x8BA4;&#xFF1A;<code>monoscripts.ms</code></td>
+</tr>
+<tr>
+<td style="text-align:left">--verbose</td>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">&#x66F4;&#x591A;&#x65E5;&#x5FD7;&#x5F00;&#x5173;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h4>
+<pre><code>find . -iname &apos;*.pak&apos; | xargs abtool mono
+</code></pre><p>&#x518D;&#x6B21;&#x8FD0;&#x884C;&#x8BE5;&#x547D;&#x4EE4;&#x65F6;&#x53EF;&#x4EE5;&#x7B80;&#x5316;&#x4E3A;&#xFF0C;&#x5F53;&#x524D;&#x6A21;&#x5F0F;&#x4E0B;&#x4F1A;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;<code>monoscripts.ms</code>&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x6253;&#x5370;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x4E0B;&#x3002;
+<img src="../cases/compare/mono.png" alt=""></p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x5217;&#xFF1A;&#x5E8F;&#x53F7;</li>
+<li>&#x7B2C;&#x4E8C;&#x5217;&#xFF1A;<code>MonoBehaviour</code>&#x7684;&#x5B8C;&#x6574;&#x7C7B;&#x5B9A;&#x4E49;&#x540D;&#xFF0C;&#x5176;&#x4E2D;&#x5192;&#x53F7;<code>:</code>&#x524D;&#x7684;&#x90E8;&#x5206;&#x662F;&#x547D;&#x4EE4;&#x7A7A;&#x95F4;&#xFF0C;&#x540E;&#x534A;&#x90E8;&#x5206;&#x4E3A;&#x7C7B;&#x540D;</li>
+<li>&#x7B2C;&#x4E09;&#x5217;&#xFF1A;&#x8BE5;&#x7C7B;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x5728;<code>GameObject</code>&#x4E0A;&#x6DFB;&#x52A0;&#x4E00;&#x6B21;&#x7EC4;&#x4EF6;&#x7B97;&#x4F5C;&#x4E00;&#x6B21;&#x5B9E;&#x4F8B;&#x5316;</li>
+<li>&#x7B2C;&#x56DB;&#x5217;&#xFF1A;&#x5F15;&#x7528;&#x8BE5;&#x7C7B;&#x7684;ab&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x6570;&#x91CF;</li>
+<li>&#x7B2C;&#x4E94;&#x5217;&#xFF1A;&#x5F15;&#x7528;&#x8BE5;&#x7C7B;&#x7684;ab&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x603B;&#x5927;&#x5C0F;&#xFF0C;&#x6309;&#x5B57;&#x8282;&#x6570;&#x663E;&#x793A;</li>
+<li>&#x7B2C;&#x516D;&#x5217;&#xFF1A;&#x5F15;&#x7528;&#x8BE5;&#x7C7B;&#x7684;ab&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x603B;&#x5927;&#x5C0F;&#xFF0C;&#x5B89;&#x6587;&#x672C;&#x5316;&#x663E;&#x793A;</li>
+<li>&#x7B2C;&#x4E03;&#x5217;&#xFF1A;&#x8BE5;&#x7C7B;&#x7684;&#x6307;&#x7EB9;<code>Hash128</code></li>
+</ul>
 
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -757,7 +794,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mono","level":"1.4.14","depth":2,"next":{"title":"cmpmono","level":"1.4.15","depth":2,"path":"chaps/commands/cmpmono.md","ref":"chaps/commands/cmpmono.md","articles":[]},"previous":{"title":"cmpref","level":"1.4.13","depth":2,"path":"chaps/commands/cmpref.md","ref":"chaps/commands/cmpref.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"Unity开发的梦中情人❬abtool❭"},"file":{"path":"chaps/commands/mono.md","mtime":"2021-03-01T06:43:46.967Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-01T06:45:13.664Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"mono","level":"1.4.14","depth":2,"next":{"title":"cmpmono","level":"1.4.15","depth":2,"path":"chaps/commands/cmpmono.md","ref":"chaps/commands/cmpmono.md","articles":[]},"previous":{"title":"cmpref","level":"1.4.13","depth":2,"path":"chaps/commands/cmpref.md","ref":"chaps/commands/cmpref.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"Unity开发的梦中情人❬abtool❭"},"file":{"path":"chaps/commands/mono.md","mtime":"2021-03-01T08:54:28.905Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-01T06:45:13.664Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
