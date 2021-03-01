@@ -31,7 +31,7 @@
     * [cmpref](chaps/commands/cmpref.md)
     * [mono](chaps/commands/mono.md)
     * [cmpmono](chaps/commands/cmpmono.md)
-    * [external](chaps/commands/external.md)
+    * [savextl](chaps/commands/savextl.md)
     * [cmpxtl](chaps/commands/cmpxtl.md)
     * [rename](chaps/commands/rename.md)
     * [rmtree](chaps/commands/rmtree.md)
