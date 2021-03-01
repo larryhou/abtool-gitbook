@@ -18,8 +18,7 @@
 #### 示例
 
 ```bash
-# 假设ab资源的文件名为*.ab，请根据实际文件名做适当修改
-find . -iname '*.ab' | xargs abtool rename
+find . -iname '*.assetbundle' | xargs abtool rename
 ```
 
 再次运行命令时可以简化为`abtool rename`，当前模式下会自动加载`names.map`文件，并打印相关信息。
