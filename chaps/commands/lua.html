@@ -583,33 +583,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../developments/coding.html">
-            
-                <a href="../developments/coding.html">
-            
-                    
-                    文件解析
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.3" data-path="../developments/serialization.html">
-            
-                <a href="../developments/serialization.html">
-            
-                    
-                    对象序列化
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.4" data-path="../developments/command.html">
+        <li class="chapter " data-level="1.5.2" data-path="../developments/command.html">
             
                 <a href="../developments/command.html">
             
@@ -622,25 +596,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../developments/filesystem.html">
+        <li class="chapter " data-level="1.5.3" data-path="../developments/filesystem.html">
             
                 <a href="../developments/filesystem.html">
             
                     
                     文件系统
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.6" data-path="../developments/lua.html">
-            
-                <a href="../developments/lua.html">
-            
-                    
-                    LUA绑定
             
                 </a>
             
@@ -724,6 +685,27 @@
 </tr>
 </tbody>
 </table>
+<p>&#x901A;&#x8FC7;&#x8BE5;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x6267;&#x884C;lua&#x811A;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5982;&#x4E0B;&#x51E0;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF1A;</p>
+<ul>
+<li><p>archive</p>
+<p>  <code>archive</code>&#x7ED1;&#x5B9A;&#x4E86;&#x5F53;&#x524D;lua&#x811A;&#x672C;&#x5904;&#x7406;&#x4E2D;&#x7684;<code>assetbundle::AssetBundleArchive</code>&#x5BF9;&#x8C61;</p>
+</li>
+<li><p>file</p>
+<p>  <code>file</code>&#x7ED1;&#x5B9A;&#x4E86;&#x5F53;&#x524D;lua&#x811A;&#x672C;&#x5904;&#x7406;&#x4E2D;&#x7684;<code>assetbundle::SerializedFile</code>&#x5BF9;&#x8C61;</p>
+</li>
+<li><p>directory</p>
+<p>  <code>directory</code>&#x7ED1;&#x5B9A;&#x4E86;<code>assetbundle::DirectoryInfo</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x8BBF;&#x95EE;<code>archive</code>&#x4E2D;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x65B9;&#x6CD5;<code>directory:load([path])</code>&#x8FDB;&#x884C;&#x6587;&#x4EF6;&#x52A0;&#x8F7D;</p>
+</li>
+</ul>
+<p>&#x5176;&#x4ED6;lua&#x7ED1;&#x5B9A;&#x63A5;&#x53E3;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;</p>
+<ol>
+<li><p><code>abtool/luatypes.cpp</code></p>
+<p> &#x8BE5;&#x6587;&#x4EF6;&#x7ED1;&#x5B9A;&#x4E86;&#x4E0E;<code>assetbundle::AssetBundleArchive</code>&#x548C;<code>assetbundle::SerializedFile</code>&#x6709;&#x5173;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4EE5;&#x53CA;&#x63A5;&#x53E3;&#x3002;</p>
+</li>
+<li><p><code>abtool/assetbundles/unity/luatypes.cpp</code></p>
+<p>&#x8BE5;&#x6587;&#x4EF6;&#x7ED1;&#x5B9A;&#x4E86;&#x6240;&#x6709;Unity&#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;</p>
+</li>
+</ol>
 <h4 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h4>
 <pre><code class="lang-bash">abtool lua artresource_environment_scene_logicmesh_small_checkerboard.god
 </code></pre>
@@ -781,7 +763,7 @@ builder:save(<span class="hljs-string">&quot;hijack/artresource_environment_scen
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lua","level":"1.4.20","depth":2,"next":{"title":"第四章 进阶开发","level":"1.5","depth":1,"path":"chaps/developments/index.md","ref":"chaps/developments/index.md","articles":[{"title":"项目架构","level":"1.5.1","depth":2,"path":"chaps/developments/project.md","ref":"chaps/developments/project.md","articles":[]},{"title":"文件解析","level":"1.5.2","depth":2,"path":"chaps/developments/coding.md","ref":"chaps/developments/coding.md","articles":[]},{"title":"对象序列化","level":"1.5.3","depth":2,"path":"chaps/developments/serialization.md","ref":"chaps/developments/serialization.md","articles":[]},{"title":"命令系统","level":"1.5.4","depth":2,"path":"chaps/developments/command.md","ref":"chaps/developments/command.md","articles":[]},{"title":"文件系统","level":"1.5.5","depth":2,"path":"chaps/developments/filesystem.md","ref":"chaps/developments/filesystem.md","articles":[]},{"title":"LUA绑定","level":"1.5.6","depth":2,"path":"chaps/developments/lua.md","ref":"chaps/developments/lua.md","articles":[]}]},"previous":{"title":"edit","level":"1.4.19","depth":2,"path":"chaps/commands/edit.md","ref":"chaps/commands/edit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"Unity开发的梦中情人❬abtool❭"},"file":{"path":"chaps/commands/lua.md","mtime":"2021-03-01T10:32:45.682Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-01T06:45:13.664Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"lua","level":"1.4.20","depth":2,"next":{"title":"第四章 进阶开发","level":"1.5","depth":1,"path":"chaps/developments/index.md","ref":"chaps/developments/index.md","articles":[{"title":"项目架构","level":"1.5.1","depth":2,"path":"chaps/developments/project.md","ref":"chaps/developments/project.md","articles":[]},{"title":"命令系统","level":"1.5.2","depth":2,"path":"chaps/developments/command.md","ref":"chaps/developments/command.md","articles":[]},{"title":"文件系统","level":"1.5.3","depth":2,"path":"chaps/developments/filesystem.md","ref":"chaps/developments/filesystem.md","articles":[]}]},"previous":{"title":"edit","level":"1.4.19","depth":2,"path":"chaps/commands/edit.md","ref":"chaps/commands/edit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"Unity开发的梦中情人❬abtool❭"},"file":{"path":"chaps/commands/lua.md","mtime":"2021-03-02T02:34:13.699Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-01T06:45:13.664Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

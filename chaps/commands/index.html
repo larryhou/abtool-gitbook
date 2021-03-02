@@ -583,33 +583,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../developments/coding.html">
-            
-                <a href="../developments/coding.html">
-            
-                    
-                    文件解析
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.3" data-path="../developments/serialization.html">
-            
-                <a href="../developments/serialization.html">
-            
-                    
-                    对象序列化
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.4" data-path="../developments/command.html">
+        <li class="chapter " data-level="1.5.2" data-path="../developments/command.html">
             
                 <a href="../developments/command.html">
             
@@ -622,25 +596,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../developments/filesystem.html">
+        <li class="chapter " data-level="1.5.3" data-path="../developments/filesystem.html">
             
                 <a href="../developments/filesystem.html">
             
                     
                     文件系统
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.6" data-path="../developments/lua.html">
-            
-                <a href="../developments/lua.html">
-            
-                    
-                    LUA绑定
             
                 </a>
             
@@ -750,10 +711,9 @@ Commands:
   abname       : &#x901A;&#x8FC7;SF&#x8DEF;&#x5F84;&#x4ECE;*.obj&#x6587;&#x4EF6;&#x89E3;&#x6790;ab&#x540D;&#x5B57;
   cmpmono      : &#x6BD4;&#x5BF9;mono&#x547D;&#x4EE4;&#x751F;&#x6210;&#x7684;*.ms&#x6587;&#x4EF6;&#x5E76;&#x751F;&#x6210;&#x811A;&#x672C;&#x53D8;&#x66F4;&#x62A5;&#x544A;
   cmpref       : &#x5BF9;&#x6BD4;saveobj&#x547D;&#x4EE4;&#x751F;&#x6210;&#x7684;*.obj&#x6587;&#x4EF6;&#x5E76;&#x5206;&#x6790;&#x5BF9;&#x8C61;&#x5F15;&#x7528;
-  cmpxtl       : &#x6BD4;&#x5BF9;external&#x547D;&#x4EE4;&#x751F;&#x6210;&#x7684;*.xtl&#x6587;&#x4EF6;&#x5E76;&#x751F;&#x6210;ab&#x4F9D;&#x8D56;&#x53D8;&#x66F4;&#x62A5;&#x544A;
+  cmpxtl       : &#x6BD4;&#x5BF9;savextl&#x547D;&#x4EE4;&#x751F;&#x6210;&#x7684;*.xtl&#x6587;&#x4EF6;&#x5E76;&#x751F;&#x6210;ab&#x4F9D;&#x8D56;&#x53D8;&#x66F4;&#x62A5;&#x544A;
   dump         : &#x751F;&#x6210;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x7684;&#x5BF9;&#x8C61;&#x6570;&#x636E;
   edit         : &#x8FDB;&#x5165;&#x4EA4;&#x4E92;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;
-  external     : &#x6536;&#x96C6;AB&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x4FE1;&#x606F;
   gencpp       : &#x4ECE;AB&#x6587;&#x4EF6;&#x63D0;&#x53D6;TypeTree&#x5E76;&#x751F;&#x6210;C++&#x5E8F;&#x5217;&#x5316;&#x4EE3;&#x7801;
   getref       : &#x83B7;&#x53D6;&#x8D44;&#x6E90;&#x5F15;&#x7528;
   gtt          : &#x4ECE;&#x5E8F;&#x5217;&#x5316;&#x7684;TypeTree&#x6587;&#x4EF6;&#x751F;&#x6210;C++&#x4EE3;&#x7801;
@@ -770,6 +730,7 @@ Commands:
   saveta       : &#x4FDD;&#x5B58;TextAsset&#x8D44;&#x6E90;
   savetex      : &#x4FDD;&#x5B58;Texture2D&#x8D44;&#x6E90;
   savetree     : &#x4FDD;&#x5B58;TypeTree&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;
+  savextl      : &#x6536;&#x96C6;AB&#x5916;&#x90E8;&#x4F9D;&#x8D56;&#x4FE1;&#x606F;
   scanref      : &#x68C0;&#x67E5;&#x8D44;&#x6E90;&#x5F15;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x662F;&#x5426;&#x5339;&#x914D;
   scantex      : &#x626B;&#x63CF;&#x975E;&#x6807;&#x51C6;&#x683C;&#x5F0F;&#x7684;&#x8D34;&#x56FE;
   size         : &#x751F;&#x6210;&#x5BF9;&#x8C61;&#x5927;&#x5C0F;&#x7B80;&#x62A5;
@@ -834,7 +795,7 @@ Commands:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第三章 命令详解","level":"1.4","depth":1,"next":{"title":"savetree","level":"1.4.1","depth":2,"path":"chaps/commands/savetree.md","ref":"chaps/commands/savetree.md","articles":[]},"previous":{"title":"资源编辑","level":"1.3.7","depth":2,"path":"chaps/cases/edit.md","ref":"chaps/cases/edit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"Unity开发的梦中情人❬abtool❭"},"file":{"path":"chaps/commands/index.md","mtime":"2021-03-01T02:16:13.193Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-01T06:45:13.664Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第三章 命令详解","level":"1.4","depth":1,"next":{"title":"savetree","level":"1.4.1","depth":2,"path":"chaps/commands/savetree.md","ref":"chaps/commands/savetree.md","articles":[]},"previous":{"title":"资源编辑","level":"1.3.7","depth":2,"path":"chaps/cases/edit.md","ref":"chaps/cases/edit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax","summary-tree-number","splitter","popup","code","chapter-fold","-lunr","-search","search-pro","back-to-top-button","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"summary-tree-number":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"larryhou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"abtool","gitbook":"*","description":"Unity开发的梦中情人❬abtool❭"},"file":{"path":"chaps/commands/index.md","mtime":"2021-03-02T02:10:57.724Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-01T06:45:13.664Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
