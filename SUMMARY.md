@@ -39,8 +39,5 @@
 
 * [第四章 进阶开发](chaps/developments/index.md)
     * [项目架构](chaps/developments/project.md)
-    * [文件解析](chaps/developments/coding.md)
-    * [对象序列化](chaps/developments/serialization.md)
     * [命令系统](chaps/developments/command.md)
     * [文件系统](chaps/developments/filesystem.md)
-    * [LUA绑定](chaps/developments/lua.md)

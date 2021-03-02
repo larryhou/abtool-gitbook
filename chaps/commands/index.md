@@ -69,10 +69,9 @@ Commands:
   abname       : 通过SF路径从*.obj文件解析ab名字
   cmpmono      : 比对mono命令生成的*.ms文件并生成脚本变更报告
   cmpref       : 对比saveobj命令生成的*.obj文件并分析对象引用
-  cmpxtl       : 比对external命令生成的*.xtl文件并生成ab依赖变更报告
+  cmpxtl       : 比对savextl命令生成的*.xtl文件并生成ab依赖变更报告
   dump         : 生成文本格式的对象数据
   edit         : 进入交互编辑模式
-  external     : 收集AB外部依赖信息
   gencpp       : 从AB文件提取TypeTree并生成C++序列化代码
   getref       : 获取资源引用
   gtt          : 从序列化的TypeTree文件生成C++代码
@@ -89,6 +88,7 @@ Commands:
   saveta       : 保存TextAsset资源
   savetex      : 保存Texture2D资源
   savetree     : 保存TypeTree二进制数据
+  savextl      : 收集AB外部依赖信息
   scanref      : 检查资源引用的对象类型是否匹配
   scantex      : 扫描非标准格式的贴图
   size         : 生成对象大小简报
