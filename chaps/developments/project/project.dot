@@ -1,0 +1,25 @@
+digraph{
+    graph [pad="0.5", nodesep="0.6", ranksep="0.8"];
+    bgcolor=transparent;
+    rankdir=LR;
+    splines="polyline";
+    edge[arrowhead=odiamond];
+    node[shape=note];
+
+    project[label="工程结构"]
+    coding[label="资源解析"]
+    codegen[label="代码生成"]
+    methods[label="对象方法"]
+    b1[label="LUA绑定"];
+    b2[label="LUA绑定"];
+    b3[label="LUA绑定"];
+
+    project -> coding;
+    coding -> AssetBundleArchive -> b1;
+    coding -> SerializedFile -> b2;
+    project -> codegen -> {methods, 数据结构, b3};
+    methods -> {数据编码, 数据解码, 对象打印};
+    project -> 命令封装 -> {参数解析, 生命周期};
+    project -> 文件系统;
+    
+}
