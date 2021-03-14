@@ -1,0 +1,28 @@
+digraph{
+    graph[nodesep=1.2, ranksep=0.6]
+    node[shape=record, fontname="courier"]
+    edge[arrowhead=vee, fontname="courier", arrowsize=0.6]
+    
+    start[label="启动", shape=octagon]
+    register[label="{注册命令|CommandManager::register_command}"]
+    args[label="{参数注册|Command::register_command_options}"]
+    parse[label="解析参数"]
+    init[label="{初始化命令|Command::init}"]
+    read[label="解压破壳"]
+    check[label="检查文件队列", shape=diamond, height=0.8]
+    load_objects[label="{加载对象|Command::load_objects}"]
+    process[label="{处理文件|Command::process}"]
+    finish[label="{结束|Command::finish}"]
+    exit[label="退出", shape=ellipse]
+
+    start->register->args->parse->init;
+    init->check;
+
+    check:e->read:n[taillabel="Y", weight=2];
+    read->load_objects[weight=3];
+    load_objects->process[weight=4];
+    
+    process:w->check:s[taillabel="⟳", weight=2];
+    check:w->finish:e[taillabel="N"];
+    finish->exit;
+}

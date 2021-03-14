@@ -4,9 +4,9 @@ digraph{
     rankdir=LR;
     splines="polyline";
     edge[arrowhead=odiamond];
-    node[shape=note];
+    node[shape=note, fontname="courier"];
 
-    project[label="工程结构"]
+    project[label="项目结构"]
     coding[label="资源解析"]
     codegen[label="代码生成"]
     methods[label="对象方法"]
